@@ -1,0 +1,67 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P15-HERO-REFINEMENT-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "baselineMain": "915fb440d5db5eaac0ead0f607d9bab8e591c4c8",
+  "offlineArchive": "STAGE_FORGE_P15_HERO_REFINEMENT_FOUR_HERO_FAMILIES.zip",
+  "offlineArchiveSHA256": "f0e7d6f81f7042e2653ace7309ec8bcacc800bb5b7b596b028079b80c081a0f8",
+  "reviewScope": "20 distinct JSON families from P4/P6/P8/P13/P14 were inspected locally; P13 represents revised P9 families. Not an exhaustive history of every prior experiment.",
+  "publicationBoundary": "This public branch includes metadata and explanatory documents ONLY. No stage JSON, source generator, previews, private game/editor or user-authored assets.",
+  "parts": [
+    {
+      "id": "AW-001",
+      "parentBatch": "P8",
+      "sha256": "d8e16f09da04237dbec4456937be456924211708ccd5f229f3072f96fccd8736",
+      "sourceSHA256": "6c636990108272d24b2f118f329cc2d8ddcd3178e03ebc40d5528dd02de9f317",
+      "surfaces": 32,
+      "fixtures": 120,
+      "minWidthM": 16.92,
+      "maxBankDeg": 13.1,
+      "guideHazardStaticProxyM": 3.21
+    },
+    {
+      "id": "PX-001",
+      "parentBatch": "P13",
+      "sha256": "ff02efa95ed7a4b26ebc78f7242756782433dabc4d42c5b418d95505b7f98da3",
+      "sourceSHA256": "530747d69606f82e3e6d3b24c3baecc9dc8fe29a02aaefbb22de18bd66573cba",
+      "surfaces": 32,
+      "fixtures": 114,
+      "minWidthM": 25.12,
+      "maxBankDeg": 21.4,
+      "guideHazardStaticProxyM": 3.25
+    },
+    {
+      "id": "CC-001",
+      "parentBatch": "P14",
+      "sha256": "7d1dddbb45d51fd30de99d6215698f2fa5feb6df81b6035429f38354dc2fdbb4",
+      "sourceSHA256": "2753680e83761ea3596b36a5136aef28a532f8d8b123da7ae28b181b0588a076",
+      "surfaces": 32,
+      "fixtures": 119,
+      "minWidthM": 20.3,
+      "maxBankDeg": 24.7,
+      "guideHazardStaticProxyM": 7.41
+    },
+    {
+      "id": "FA-001",
+      "parentBatch": "P14",
+      "sha256": "d7bdafdb0407c7e8c30818e6c2b46028d262d45f86fcb1e980227ca864528d11",
+      "sourceSHA256": "5209e608749823c389040d6fafe236c3383d3a0dd49adf5f89b0129ed28f5a7f",
+      "surfaces": 32,
+      "fixtures": 106,
+      "minWidthM": 15.71,
+      "maxBankDeg": 22.3,
+      "guideHazardStaticProxyM": 3.33
+    }
+  ],
+  "verification": {
+    "standaloneFormat": "4/4 PASS",
+    "staticGeometry": "4/4 PASS",
+    "architectureAndSceneryInvariant": "4/4 PASS",
+    "freshExtractAndByteExactRegeneration": "4/4 PASS",
+    "nativeB38PhysicalTrials": "NOT_RUN",
+    "humanGameplay": "NOT_RUN",
+    "liveGameIntegration": "NOT_RUN",
+    "generatedRouteSemantics": "UNVERIFIED"
+  },
+  "disclaimer": "The 3D AABB and sparse decorative proximity tests are geometry-only proxies, not swept-ball native collision evidence. No P15 speed passes can be claimed."
+}
