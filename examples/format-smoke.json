@@ -1,0 +1,32 @@
+{
+  "schema": "dopagaki.track-director/1",
+  "name": "FORMAT SMOKE ONLY - NOT A STAGE",
+  "surfaces": [
+    {
+      "id": "smoke-road",
+      "name": "Format fixture, not playable content",
+      "rows": 2,
+      "cols": 3,
+      "points": [
+        [3, 0, 0],
+        [0, 0, 0],
+        [-3, 0, 0],
+        [3, 0, 20],
+        [0, 0, 20],
+        [-3, 0, 20]
+      ],
+      "resolution": 3,
+      "rideable": true,
+      "collidable": true,
+      "material": "road",
+      "thickness": 1.25,
+      "visible": true,
+      "locked": false
+    }
+  ],
+  "spawns": [
+    {"name": "Smoke start", "surface": "smoke-road", "u": 0.05, "v": 0.5}
+  ],
+  "route": [[0, 0, 1], [0, 0, 20]],
+  "fixtures": []
+}
