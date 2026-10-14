@@ -1,0 +1,74 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P6-MONUMENT-RUN-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "distribution": "Private conversation ZIP: STAGE_FORGE_P6_MONUMENT_RUN_FOUR_NEW_FAMILIES.zip",
+  "releaseBoundary": "Only these public metadata records are committed; stage JSON, preview assets and generator remain offline pending separate review.",
+  "physics": "NOT_RUN_NO_B38_RUNTIME",
+  "human": "NOT_RUN",
+  "parts": [
+    {
+      "id": "SL-001",
+      "name": "SLUICE LEVIATHAN",
+      "family": "monumentalHydraulicLock",
+      "sha256": "4152594a3a428977f36c4e3024567c2a5c9c3ecd6c53b7347b40e72208dd6216",
+      "bytes": 143492,
+      "surfaces": 31,
+      "fixtures": 120,
+      "addedFixedHazards": 6,
+      "minGuideToHazardPlanarMeters": 4.9,
+      "format": "PASS",
+      "static": "PASS",
+      "nativePhysics": "NOT_RUN"
+    },
+    {
+      "id": "VA-001",
+      "name": "VERTEX ARBORETUM",
+      "family": "branchingInvertedCanopy",
+      "sha256": "5dac9de594f17dcfb31f5e0572b1767a177849965c2ec8b6a78eb9dda72c3520",
+      "bytes": 157273,
+      "surfaces": 31,
+      "fixtures": 129,
+      "addedFixedHazards": 4,
+      "minGuideToHazardPlanarMeters": 5.82,
+      "format": "PASS",
+      "static": "PASS",
+      "nativePhysics": "NOT_RUN"
+    },
+    {
+      "id": "CL-001",
+      "name": "CLOCKWORK LATTICE",
+      "family": "coaxialSpurGearVault",
+      "sha256": "d111d0e0e312f82267836206d96dea9c6f378ecad97569b6867cfab5fbb410b2",
+      "bytes": 160307,
+      "surfaces": 32,
+      "fixtures": 166,
+      "addedFixedHazards": 6,
+      "minGuideToHazardPlanarMeters": 5.58,
+      "format": "PASS",
+      "static": "PASS",
+      "nativePhysics": "NOT_RUN"
+    },
+    {
+      "id": "DK-001",
+      "name": "NEBULA DRYDOCK",
+      "family": "suspendedVesselCradles",
+      "sha256": "6421131fa90ea0ec656d69f455b9bb5e1010a0f54ae3a99763900dbf1a8ae924",
+      "bytes": 157111,
+      "surfaces": 32,
+      "fixtures": 134,
+      "addedFixedHazards": 4,
+      "minGuideToHazardPlanarMeters": 6.33,
+      "format": "PASS",
+      "static": "PASS",
+      "nativePhysics": "NOT_RUN"
+    }
+  ],
+  "verification": {
+    "staticFormatPassed": 4,
+    "staticGeometryPassed": 4,
+    "nativeTrials": 0,
+    "manualTrials": 0,
+    "limitations": "Obstacle-guide clearances are planar AABB, not swept-sphere native collisions. Visual proximity sample is not complete mesh intersection proof. Generated route semantics and any jump takeoff/landing are unverified."
+  }
+}
