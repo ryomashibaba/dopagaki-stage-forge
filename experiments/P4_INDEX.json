@@ -1,0 +1,170 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P4-first-four-new-families-2026-10-14",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "description": "Four new architecture-first originally generated stage-part JSON assets, distributed as a separate conversation ZIP. This file records verifiable hashes and results only. The stage JSON payloads, user-authored stages, and game engine sources are not published to GitHub.",
+  "metrics": {
+    "familyCount": 4,
+    "distinctFamilies": 4,
+    "nativeFormatPassed": 4,
+    "staticGeometryPassed": 4,
+    "automatedAssistRunsFinished": 24,
+    "automatedAssistRunsTotal": 24,
+    "manualWindowsPlaytests": 0
+  },
+  "verification": {
+    "runtime": "Local B3.8 engine, assisted nearest-guide steering; 240Hz max 37s",
+    "scope": "Format, static road and collision-mesh compile, autopilot at declared initial speeds; no manual-play or game-v7 guarantee"
+  },
+  "excludedConcept": "ORBITAL GATES visually too close to TITAN TURBINE; replaced by ECLIPSE DISHES",
+  "parts": [
+    {
+      "id": "PC-001",
+      "family": "crystalInterlock",
+      "name": "PRISM CATHEDRAL / SHATTERED NAVE",
+      "surfaces": 31,
+      "decorativeSurfaces": 30,
+      "fixtures": 140,
+      "bytes": 116106,
+      "sha256": "fbe252768013037d6add2ddd47deef6a0a2550adad8eafdc273f60f34d3b2e74",
+      "bounds": {
+        "min": [
+          -107,
+          18,
+          -42.12
+        ],
+        "max": [
+          110,
+          191,
+          598.39
+        ]
+      },
+      "status": "experimental",
+      "nativeFormat": "PASS",
+      "staticGeometry": "PASS",
+      "autopilotCompleted": 6,
+      "autopilotSpeeds": [
+        28,
+        36,
+        48,
+        64,
+        80,
+        96
+      ],
+      "manualWindows": "NOT_TESTED",
+      "publishedGame": "NOT_TESTED",
+      "stageJsonStoredInGitHub": false
+    },
+    {
+      "id": "TT-001",
+      "family": "radialRotorMachinery",
+      "name": "TITAN TURBINE / ROTOR CATHEDRAL",
+      "surfaces": 29,
+      "decorativeSurfaces": 28,
+      "fixtures": 152,
+      "bytes": 137297,
+      "sha256": "30cf2b96772b4bae1a112f0d288ddb6e71e5739d0aa41d7c2d2e8070babe1691",
+      "bounds": {
+        "min": [
+          -95.74,
+          -17.75,
+          -40.32
+        ],
+        "max": [
+          108,
+          177.62,
+          526.93
+        ]
+      },
+      "status": "experimental",
+      "nativeFormat": "PASS",
+      "staticGeometry": "PASS",
+      "autopilotCompleted": 6,
+      "autopilotSpeeds": [
+        28,
+        36,
+        48,
+        64,
+        80,
+        96
+      ],
+      "manualWindows": "NOT_TESTED",
+      "publishedGame": "NOT_TESTED",
+      "stageJsonStoredInGitHub": false
+    },
+    {
+      "id": "ED-001",
+      "family": "invertedParaboloidArray",
+      "name": "ECLIPSE DISHES / INVERTED OBSERVATORIES",
+      "surfaces": 31,
+      "decorativeSurfaces": 30,
+      "fixtures": 144,
+      "bytes": 183659,
+      "sha256": "f4fe98ff7d2e03afa063f75c1f1817e1918fc8d6e38d1962069cd8c29cbe37ba",
+      "bounds": {
+        "min": [
+          -174,
+          0,
+          -41.87
+        ],
+        "max": [
+          173.42,
+          129.75,
+          528.42
+        ]
+      },
+      "status": "experimental",
+      "nativeFormat": "PASS",
+      "staticGeometry": "PASS",
+      "autopilotCompleted": 6,
+      "autopilotSpeeds": [
+        28,
+        36,
+        48,
+        64,
+        80,
+        96
+      ],
+      "manualWindows": "NOT_TESTED",
+      "publishedGame": "NOT_TESTED",
+      "stageJsonStoredInGitHub": false
+    },
+    {
+      "id": "SC-001",
+      "family": "verticalCityUrban",
+      "name": "SKYLINE COLLAPSE / ROOFTOP CORRIDOR",
+      "surfaces": 32,
+      "decorativeSurfaces": 31,
+      "fixtures": 156,
+      "bytes": 126116,
+      "sha256": "760787aad6e5d72390ce3efdd729c4c897c233db9293c20c7dc44f5a49838b4e",
+      "bounds": {
+        "min": [
+          -171.12,
+          25,
+          -40.41
+        ],
+        "max": [
+          169.65,
+          206,
+          556.9
+        ]
+      },
+      "status": "experimental",
+      "nativeFormat": "PASS",
+      "staticGeometry": "PASS",
+      "autopilotCompleted": 6,
+      "autopilotSpeeds": [
+        28,
+        36,
+        48,
+        64,
+        80,
+        96
+      ],
+      "manualWindows": "NOT_TESTED",
+      "publishedGame": "NOT_TESTED",
+      "stageJsonStoredInGitHub": false
+    }
+  ]
+}
