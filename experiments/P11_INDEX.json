@@ -1,0 +1,79 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P11-SPEED-FLOW-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "baseMain": "915fb440d5db5eaac0ead0f607d9bab8e591c4c8",
+  "parentBatch": "P10-DRIVE-GEOMETRY",
+  "archiveName": "STAGE_FORGE_P11_SPEED_FLOW_FOUR_FAMILIES.zip",
+  "archiveSha256": "73c0f609f636c0e477d7f3ff870a3e2ae6bf55a9f028b58b1021fb4842542bcf",
+  "privacyBoundary": "This Public PR contains ONLY this metadata and a design note; stage JSON and generator code are delivered in a separate conversation ZIP.",
+  "tests": {
+    "standaloneFormat": "4/4_PASS",
+    "staticGeometry": "4/4_PASS",
+    "selfCrossingAndVerticalStructure": "PASS",
+    "zipExtractByteExactRegeneration": "4/4_PASS",
+    "pacingGeometryProxy": "4/4_PASS",
+    "nativeB38Physics": "NOT_RUN",
+    "manualPlay": "NOT_RUN",
+    "gameV7Integration": "NOT_RUN"
+  },
+  "parts": [
+    {
+      "id": "PX-001",
+      "name": "PARALLAX EXCHANGE",
+      "sha256": "96fec64a625a0a79992169c4b0b1ffd1518b21bed19ba21b52fdd291d9d916b3",
+      "bytes": 142256,
+      "surfaces": 32,
+      "fixtures": 114,
+      "minWidthM": 20.04,
+      "p10MaxGuideCurvaturePerM": 0.043265,
+      "p11MaxGuideCurvaturePerM": 0.033124,
+      "curvatureReductionPercent": 23.4,
+      "minObstacleStartOrConsecutiveDistanceM": 111.9,
+      "nativePhysics": "NOT_RUN"
+    },
+    {
+      "id": "AR-001",
+      "name": "ATLAS REVERSAL",
+      "sha256": "fe06a7b9bbd30a1d382e261a5be9db5d647521304814e6649d5de6fb9d947aed",
+      "bytes": 142618,
+      "surfaces": 32,
+      "fixtures": 114,
+      "minWidthM": 18.08,
+      "p10MaxGuideCurvaturePerM": 0.042489,
+      "p11MaxGuideCurvaturePerM": 0.033214,
+      "curvatureReductionPercent": 21.8,
+      "minObstacleStartOrConsecutiveDistanceM": 97.3,
+      "nativePhysics": "NOT_RUN"
+    },
+    {
+      "id": "HC-001",
+      "name": "HEXACHAMBERS",
+      "sha256": "5cc73d7c5ed3f63231ae15b55ac31b993daf939d61f72f052506823090a809a8",
+      "bytes": 151615,
+      "surfaces": 32,
+      "fixtures": 114,
+      "minWidthM": 18.03,
+      "p10MaxGuideCurvaturePerM": 0.040798,
+      "p11MaxGuideCurvaturePerM": 0.029478,
+      "curvatureReductionPercent": 27.7,
+      "minObstacleStartOrConsecutiveDistanceM": 96.7,
+      "nativePhysics": "NOT_RUN"
+    },
+    {
+      "id": "TW-001",
+      "name": "TIDAL WAVEFRAME",
+      "sha256": "f813247a8fd0dd7b41dff55328ec6eeeeb7ad7816a60e4fcef24c9ed624fa1bd",
+      "bytes": 141055,
+      "surfaces": 32,
+      "fixtures": 112,
+      "minWidthM": 19.02,
+      "p10MaxGuideCurvaturePerM": 0.026281,
+      "p11MaxGuideCurvaturePerM": 0.014822,
+      "curvatureReductionPercent": 43.6,
+      "minObstacleStartOrConsecutiveDistanceM": 98.1,
+      "nativePhysics": "NOT_RUN"
+    }
+  ],
+  "limitations": "The route is manually authored while generatedRoute:true; native B3.8 resolution semantics remain unverified. Speed-96 headways, bank, curvature and AABB clearance are geometric proxies, not physical performance or playable timing results. Actual B3.8 collision and camera are unavailable."
+}
