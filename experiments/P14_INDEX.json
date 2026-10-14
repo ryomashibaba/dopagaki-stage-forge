@@ -1,0 +1,81 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P14-MONUMENT-PLAY-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "publicScope": "Metadata and docs only. Full course JSON, generator, previews and QA are offline in the conversation ZIP.",
+  "baselineMain": "915fb440d5db5eaac0ead0f607d9bab8e591c4c8",
+  "archiveName": "STAGE_FORGE_P14_MONUMENT_PLAY_FOUR_NEW_FAMILIES.zip",
+  "archiveSHA256": "3a615b5c61feee48d330c9f1d52fcd15f7067e7823908829925655f60bd4a75e",
+  "parts": [
+    {
+      "id": "TF-001",
+      "name": "TRIDENT FOUNDRY",
+      "structureFamily": "triProngedFoundryHall",
+      "sha256": "8fa52171b89b5102270da14efbc7ff0e5e226c5e753153405bda3455b5333631",
+      "surfaces": 32,
+      "fixtures": 105,
+      "fixedHazards": 5,
+      "minSampledWidthM": 18.12,
+      "sampledLengthM": 735.2,
+      "maxSampledBankDegrees": 13.5,
+      "guideObstacle3DAABBminMeters": 6.37,
+      "staticDoubleSideProbes": 3
+    },
+    {
+      "id": "CC-001",
+      "name": "CYCLOPS CRESCENT",
+      "structureFamily": "partialRingCitadel",
+      "sha256": "2753680e83761ea3596b36a5136aef28a532f8d8b123da7ae28b181b0588a076",
+      "surfaces": 32,
+      "fixtures": 119,
+      "fixedHazards": 4,
+      "minSampledWidthM": 18.53,
+      "sampledLengthM": 671.6,
+      "maxSampledBankDegrees": 24.1,
+      "guideObstacle3DAABBminMeters": 7.62,
+      "measuredSignedPlanarTurnDegrees": 202.89
+    },
+    {
+      "id": "AG-001",
+      "name": "ANCHORFALL GANTRY",
+      "structureFamily": "suspendedStepGantry",
+      "sha256": "80f640dbec151b979c4243f88b941b8c7433e808323671318c61214fd1d94bf6",
+      "surfaces": 32,
+      "fixtures": 109,
+      "fixedHazards": 4,
+      "minSampledWidthM": 16.83,
+      "sampledLengthM": 720,
+      "maxSampledBankDegrees": 11.6,
+      "guideObstacle3DAABBminMeters": 5.96,
+      "elevationDirectionReversals": 4
+    },
+    {
+      "id": "FA-001",
+      "name": "FOLDED AEGIS",
+      "structureFamily": "interleavedArmorTunnel",
+      "sha256": "5209e608749823c389040d6fafe236c3383d3a0dd49adf5f89b0129ed28f5a7f",
+      "surfaces": 32,
+      "fixtures": 106,
+      "fixedHazards": 5,
+      "minSampledWidthM": 16.64,
+      "sampledLengthM": 709.4,
+      "maxSampledBankDegrees": 17.7,
+      "guideObstacle3DAABBminMeters": 4.5
+    }
+  ],
+  "verification": {
+    "structuralNativeFormatLike": "4/4 PASS",
+    "staticGeometry": "4/4 PASS",
+    "noNearDegenerateCells": "4/4 PASS",
+    "noDeclaredSeamGaps": "4/4 PASS",
+    "localDualSideCenterHazardProbes": "3/3 PASS_STATIC_ONLY",
+    "nearRoadDecorationSparseSamples": "NO CLOSE HITS",
+    "archiveExtractSHA256": "PASS",
+    "byteExactRegeneration": "4/4 PASS",
+    "nativePhysics": "NOT_RUN_RUNTIME_UNAVAILABLE",
+    "manualPlay": "NOT_RUN",
+    "gameV7": "NOT_RUN",
+    "generatedRouteSemantics": "UNVERIFIED"
+  },
+  "caveat": "Static AABB and sparse 3D sampling are not true collision proof. No native B3.8 28–96m/s pass claims or game-play success are made. Prior stages remain separate unmodified archives."
+}
