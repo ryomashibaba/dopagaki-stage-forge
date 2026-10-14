@@ -1,0 +1,70 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P9-VERTICAL-INTERCHANGE-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "distribution": "Offline conversation attachment STAGE_FORGE_P9_VERTICAL_INTERCHANGE_FOUR_NEW_FAMILIES.zip (NOT committed)",
+  "archiveSha256": "bba6db8bf1207a2ed0768bd87c7cc6a78aa59f6efc7b9f75f7d800a80d83d28b",
+  "baselineMain": "915fb440d5db5eaac0ead0f607d9bab8e591c4c8",
+  "parts": [
+    {
+      "id": "PX-001",
+      "name": "PARALLAX EXCHANGE",
+      "family": "twoLevelSelfCrossingInterchange",
+      "sha256": "6565598a8b999b99b357b5c219c536c2548e8444a61aebefcc1182d39987df5d",
+      "bytes": 142074,
+      "surfaces": 32,
+      "fixtures": 114,
+      "static": "PASS",
+      "physics": "NOT_RUN",
+      "crossingVerticalGapMeters": 35
+    },
+    {
+      "id": "AR-001",
+      "name": "ATLAS REVERSAL",
+      "family": "stackedInteriorSwitchbackGallery",
+      "sha256": "17aed1da4ffa4d29face430fad2e8f105a70df7be40cb342a5a9eae1700a118f",
+      "bytes": 142807,
+      "surfaces": 32,
+      "fixtures": 114,
+      "static": "PASS",
+      "physics": "NOT_RUN",
+      "xDirectionReversals": 3
+    },
+    {
+      "id": "HC-001",
+      "name": "HEXACHAMBERS",
+      "family": "nestedAngularVaultLabyrinth",
+      "sha256": "2621b82dd2ead8348ddd27bd2ccfcbdd26aab03009acd0c6ad9e362ea54b27ad",
+      "bytes": 151407,
+      "surfaces": 32,
+      "fixtures": 114,
+      "static": "PASS",
+      "physics": "NOT_RUN"
+    },
+    {
+      "id": "TW-001",
+      "name": "TIDAL WAVEFRAME",
+      "family": "verticalWaveBracedSuspension",
+      "sha256": "f4ee1d1f87f5b2e9184285332594093405add46f0ef0afd1ae9287aaacaab96a",
+      "bytes": 140970,
+      "surfaces": 32,
+      "fixtures": 112,
+      "static": "PASS",
+      "physics": "NOT_RUN",
+      "elevationDirectionReversals": 4
+    }
+  ],
+  "validation": {
+    "standaloneFormat": "4/4_PASS",
+    "standaloneStaticGeometry": "4/4_PASS",
+    "nearDegenerateControlCells": 0,
+    "declaredSeamGapsMeters": 0,
+    "archivedRegeneration": "4/4_EXACT_BYTES",
+    "archiveExtractRegeneration": "4/4_EXACT_BYTES",
+    "noNearbySampledDecorationHits": "4/4_PASS",
+    "b38NativeAutopilot": "NOT_RUN_RUNTIME_UNAVAILABLE",
+    "humanPlay": "NOT_RUN",
+    "gameIntegration": "NOT_RUN"
+  },
+  "caveats": "Measured over-under crossing of road centerline in XZ with 35m Y difference is a static geometrical property; fixture AABB distances and sparse surface checks do not establish physical collision-free passage. Generated-route guide semantics in B3.8 and the game's camera/physics are not verified."
+}
