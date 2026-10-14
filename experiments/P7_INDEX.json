@@ -1,0 +1,69 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P7-SIGHTLINE-FLOW-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "source": "Regenerated from immutable P6 offline JSON and original P7 generator; actual stage assets remain outside this public repo.",
+  "artifacts": "STAGE_FORGE_P7_SIGHTLINE_FLOW_FOUR_FAMILIES.zip (private conversation attachment, not in GitHub)",
+  "verifications": {
+    "format": "4/4_PASS_STANDALONE",
+    "staticGeometry": "4/4_PASS",
+    "regeneration": "4/4_PASS",
+    "decorationInvariance": "4/4_PASS",
+    "archiveExtractAndRegenerate": "PASS",
+    "nativePhysics": "NOT_RUN",
+    "manualGameplay": "NOT_RUN",
+    "gameIntegration": "NOT_RUN",
+    "routeGuideSemantics": "UNVERIFIED"
+  },
+  "parts": [
+    {
+      "id": "SL-001",
+      "name": "SLUICE LEVIATHAN",
+      "slug": "sluice",
+      "sha256": "d4cc315382f2bf981adeaf23335a63322ccbf9109c35508b2a972080c06ec765",
+      "bytes": 144036,
+      "surfaces": 31,
+      "fixtures": 120,
+      "p6GuideMaxCurvaturePerMeter": 0.036264,
+      "p7GuideMaxCurvaturePerMeter": 0.008144,
+      "planarGuideHazardMarginM": 4.94
+    },
+    {
+      "id": "VA-001",
+      "name": "VERTEX ARBORETUM",
+      "slug": "canopy",
+      "sha256": "e6fa27ebcc6f1a877c95d510e72e81679d52fab0176b46f27c6bd45214ce5b9f",
+      "bytes": 157664,
+      "surfaces": 31,
+      "fixtures": 129,
+      "p6GuideMaxCurvaturePerMeter": 0.012322,
+      "p7GuideMaxCurvaturePerMeter": 0.00527,
+      "planarGuideHazardMarginM": 5.17
+    },
+    {
+      "id": "CL-001",
+      "name": "CLOCKWORK LATTICE",
+      "slug": "clock",
+      "sha256": "03d4f5e93d5640ca4aed7714c2665b48eb3cd95f34135898428535191fb11253",
+      "bytes": 161150,
+      "surfaces": 32,
+      "fixtures": 166,
+      "p6GuideMaxCurvaturePerMeter": 0.060985,
+      "p7GuideMaxCurvaturePerMeter": 0.007125,
+      "planarGuideHazardMarginM": 5.32
+    },
+    {
+      "id": "DK-001",
+      "name": "NEBULA DRYDOCK",
+      "slug": "drydock",
+      "sha256": "ac4736a9806d84f8ca29f9e4ac12cf35c380056ed24c9a3cee15259832069e22",
+      "bytes": 157577,
+      "surfaces": 32,
+      "fixtures": 134,
+      "p6GuideMaxCurvaturePerMeter": 0.036078,
+      "p7GuideMaxCurvaturePerMeter": 0.011853,
+      "planarGuideHazardMarginM": 5.14
+    }
+  ],
+  "caveat": "Guide curvature is a static property of the authored polyline, not an actual physical acceleration or pass/fail result. Planar obstacle margin does not model ball radius or swept native collision. B3.8 native physics is unavailable; no takeoff or landing has been confirmed."
+}
