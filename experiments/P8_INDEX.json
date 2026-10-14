@@ -1,0 +1,80 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P8-SPATIAL-REALMS-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "baseMain": "915fb440d5db5eaac0ead0f607d9bab8e591c4c8",
+  "distribution": "Separately delivered conversation ZIP; no course JSON or generator published in this Public PR",
+  "parts": [
+    {
+      "id": "AW-001",
+      "name": "AXIOM WELL",
+      "structureFamily": "layeredHelicalShaft",
+      "sha256": "6c636990108272d24b2f118f329cc2d8ddcd3178e03ebc40d5528dd02de9f317",
+      "bytes": 160007,
+      "surfaces": 32,
+      "fixtures": 120,
+      "obstacles": 4,
+      "minWidthM": 13.01,
+      "minGuideToObstacle3DAABBM": 4.38,
+      "format": "PASS",
+      "staticGeometry": "PASS",
+      "nativeB38Physics": "NOT_RUN"
+    },
+    {
+      "id": "FD-001",
+      "name": "FRACTURE DELTA",
+      "structureFamily": "fracturedSkyCanyon",
+      "sha256": "0c85b36a9ef1de3dd0e23eb039a815210f235706c25d7dafc785115f264247f2",
+      "bytes": 162161,
+      "surfaces": 32,
+      "fixtures": 129,
+      "obstacles": 5,
+      "minWidthM": 12.23,
+      "minGuideToObstacle3DAABBM": 2.78,
+      "format": "PASS",
+      "staticGeometry": "PASS",
+      "nativeB38Physics": "NOT_RUN"
+    },
+    {
+      "id": "OB-001",
+      "name": "OBSIDIAN BLOOM",
+      "structureFamily": "interleavedMechanicalPetalVault",
+      "sha256": "5b6d917b637d2b5a4b241b3c30c53b6fc1687b88f1dbb4f868c0dff8a9937311",
+      "bytes": 189080,
+      "surfaces": 32,
+      "fixtures": 118,
+      "obstacles": 6,
+      "minWidthM": 12.09,
+      "minGuideToObstacle3DAABBM": 2.66,
+      "format": "PASS",
+      "staticGeometry": "PASS",
+      "nativeB38Physics": "NOT_RUN"
+    },
+    {
+      "id": "LC-001",
+      "name": "LUMEN CATENARY",
+      "structureFamily": "suspendedCatenaryValleySpan",
+      "sha256": "68fd84b39a11a8a56f24a7c653af1a56c7c7283cb12f2ce4d5dc0a2b59b6453d",
+      "bytes": 170036,
+      "surfaces": 32,
+      "fixtures": 114,
+      "obstacles": 4,
+      "minWidthM": 12.31,
+      "minGuideToObstacle3DAABBM": 3.68,
+      "format": "PASS",
+      "staticGeometry": "PASS",
+      "nativeB38Physics": "NOT_RUN"
+    }
+  ],
+  "checks": {
+    "format": 4,
+    "staticGeometry": 4,
+    "exactRegeneration": 4,
+    "extractAndRegenerate": 4,
+    "nearRoadDecorative3DSampleHits": 0,
+    "nativeSpeedTrials": 0,
+    "humanPlaytests": 0,
+    "gameIntegrations": 0
+  },
+  "caveats": "3D distances are route-point to fixture AABB approximations and are NOT proof of swept-ball clearance. Decorative proximity is sparse 3D sample-based and can miss collisions. B3.8 native route semantics for generatedRoute:true and real camera are unverified. Prior P4 native completions do not transfer."
+}
