@@ -1,0 +1,68 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P12-ROUTE-CHOICE-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "parentBatch": "P11-SPEED-FLOW",
+  "baselineMain": "915fb440d5db5eaac0ead0f607d9bab8e591c4c8",
+  "archive": "STAGE_FORGE_P12_ROUTE_CHOICE_FOUR_FAMILIES.zip (offline chat attachment; NOT posted to public GitHub)",
+  "archiveSHA256": "7a493e8f15cff91896890be5a3c683131ea9d6ea5e40a29d5c29a962d103c221",
+  "publication": "Metadata and documentation only. Stage geometry, generators, source baselines and previews remain offline.",
+  "tests": {
+    "format": "4/4 PASS",
+    "staticGeometry": "4/4 PASS",
+    "dualSideLocalPassages": "9/9 PASS_STATIC_ONLY",
+    "decorationUnchanged": "4/4 PASS",
+    "roadChanged": "4/4 PASS",
+    "zipExtractExactRegeneration": "4/4 PASS",
+    "nativePhysics": "NOT_RUN",
+    "human": "NOT_RUN",
+    "gameV7": "NOT_RUN"
+  },
+  "parts": [
+    {
+      "id": "PX-001",
+      "slug": "exchange",
+      "sha256": "28bf6403a9dbd31cde82cc3b40320ac7255872711c7a548d4b3c86eaca138f3e",
+      "bytes": 144379,
+      "surfaces": 32,
+      "fixtures": 114,
+      "dualSidePassages": 2,
+      "minSampledWidthMeters": 25.33,
+      "minRouteObstacleAABB3DMeters": 3.66
+    },
+    {
+      "id": "AR-001",
+      "slug": "atrium",
+      "sha256": "b02a7066c5c9afd2cc2f9f17f68988d2862178ceae50a022bcbd301e1ab20947",
+      "bytes": 144799,
+      "surfaces": 32,
+      "fixtures": 114,
+      "dualSidePassages": 2,
+      "minSampledWidthMeters": 24.15,
+      "minRouteObstacleAABB3DMeters": 3.01
+    },
+    {
+      "id": "HC-001",
+      "slug": "chambers",
+      "sha256": "e1bbdb467f2b0d1151a8de0cd9276a294f3bc1fdc86d840cb944ea1815d9b55e",
+      "bytes": 154664,
+      "surfaces": 32,
+      "fixtures": 114,
+      "dualSidePassages": 3,
+      "minSampledWidthMeters": 24.71,
+      "minRouteObstacleAABB3DMeters": 2.91
+    },
+    {
+      "id": "TW-001",
+      "slug": "tide",
+      "sha256": "f84beac0327f3cd2288630cee8fecc21e56666a8bbecca676a6b34af6d748d56",
+      "bytes": 143195,
+      "surfaces": 32,
+      "fixtures": 112,
+      "dualSidePassages": 2,
+      "minSampledWidthMeters": 24.67,
+      "minRouteObstacleAABB3DMeters": 3.37
+    }
+  ],
+  "caveat": "All passage checks sample a continuous single-road surface and static AABB proxies; they do not prove full left/right human driveability, collision or steering dynamics, native B3.8 generatedRoute behavior, or game compatibility. Earlier P4 24/24 results do not transfer."
+}
