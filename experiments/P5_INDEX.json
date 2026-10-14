@@ -1,0 +1,52 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P5-A-roadplay-2026-10-14",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "source": "Exact SHA256-verified P4 ZIP, GitHub main 915fb440d5db5eaac0ead0f607d9bab8e591c4c8",
+  "parts": [
+    {
+      "id": "PC-001",
+      "sha256": "4c50660795fa067c9bd5b7b7a3a238d528269042648429e9e40b557e05ce8600",
+      "bytes": 123678,
+      "surfaces": 31,
+      "fixtures": 146,
+      "standaloneContract": "PASS",
+      "standaloneStatic": "PASS",
+      "physical": "NOT_RUN_RUNTIME_UNAVAILABLE",
+      "manual": "NOT_RUN"
+    },
+    {
+      "id": "TT-001",
+      "sha256": "d1ff0009a651d89566993c130f35c8044337b5ca5ea39daca5481237a1fdc00c",
+      "bytes": 146064,
+      "surfaces": 29,
+      "fixtures": 160,
+      "standaloneContract": "PASS",
+      "standaloneStatic": "PASS",
+      "physical": "NOT_RUN_RUNTIME_UNAVAILABLE",
+      "manual": "NOT_RUN"
+    },
+    {
+      "id": "ED-001",
+      "sha256": "0f28dd7a3e06e7d0a87de3e84c9027594311cd9bfeb3bae59a334d847c543275",
+      "bytes": 187988,
+      "surfaces": 31,
+      "fixtures": 144,
+      "standaloneContract": "PASS",
+      "standaloneStatic": "PASS",
+      "physical": "NOT_RUN_RUNTIME_UNAVAILABLE",
+      "manual": "NOT_RUN"
+    },
+    {
+      "id": "SC-001",
+      "sha256": "8d7dbccf4b30fd46e5f9166b4f1cb863a150317780314cc03070e5f4768b6f20",
+      "bytes": 133145,
+      "surfaces": 32,
+      "fixtures": 161,
+      "standaloneContract": "PASS",
+      "standaloneStatic": "PASS",
+      "physical": "NOT_RUN_RUNTIME_UNAVAILABLE",
+      "manual": "NOT_RUN"
+    }
+  ]
+}
