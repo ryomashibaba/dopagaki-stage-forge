@@ -1,0 +1,213 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P3-2026-10-14",
+  "publicPayloads": "Metadata only. Sanitized source and JSONs distributed in conversation handoff ZIP; not uploaded to this public repository.",
+  "independentStaticAudit": "PASS 4/4",
+  "b38OfflineAutopilot": "FINISHED 24/24",
+  "testMethods": "Native local B3.8 swept-sphere physics with route assist and nearest-guide steering; 240Hz; max 37s per case. Runtime code not published.",
+  "status": "experimental-not-approved",
+  "parts": [
+    {
+      "id": "HC-001",
+      "family": "hollowVerticalShaft",
+      "sha256": "f67e7e93e31203ad185585817b9b66cc4b11fc0e971143bed4eac2a644ea0043",
+      "p2sha256": "cce3fd9ee04b45c1648c43a3e41ab540b506d727a50c038f66dbdbfe0cc4f791",
+      "surfaces": 27,
+      "fixtures": 72,
+      "geometry": {
+        "minWidth": 12.56,
+        "maxGrade": 0.353,
+        "roadLength": 453
+      },
+      "modification": "Replaced tight wraparound with continuous void crossing; 26 architecture skins and 72 fixtures unchanged",
+      "status": "experimental",
+      "format": "PASS",
+      "staticGeometry": "PASS",
+      "nativeMeshDegenerates": 0,
+      "autopilot": [
+        {
+          "speed": 28,
+          "seconds": 8.25,
+          "status": "FINISHED"
+        },
+        {
+          "speed": 36,
+          "seconds": 7.4,
+          "status": "FINISHED"
+        },
+        {
+          "speed": 48,
+          "seconds": 6.4,
+          "status": "FINISHED"
+        },
+        {
+          "speed": 64,
+          "seconds": 5.38,
+          "status": "FINISHED"
+        },
+        {
+          "speed": 80,
+          "seconds": 4.62,
+          "status": "FINISHED"
+        },
+        {
+          "speed": 96,
+          "seconds": 4.04,
+          "status": "FINISHED"
+        }
+      ],
+      "windowsManual": "NOT_TESTED",
+      "publishedGameV7": "NOT_TESTED"
+    },
+    {
+      "id": "TF-001",
+      "family": "foldedMegaPlates",
+      "sha256": "15688203cb8f39e5daa1707b7ea7cc968da0c82f358fcd069b5d88575d892714",
+      "surfaces": 24,
+      "fixtures": 64,
+      "geometry": {
+        "minWidth": 13.19,
+        "maxGrade": 0.102,
+        "roadLength": 529.4
+      },
+      "status": "experimental",
+      "format": "PASS",
+      "staticGeometry": "PASS",
+      "nativeMeshDegenerates": 0,
+      "autopilot": [
+        {
+          "speed": 28,
+          "seconds": 12.28,
+          "status": "FINISHED"
+        },
+        {
+          "speed": 36,
+          "seconds": 10.57,
+          "status": "FINISHED"
+        },
+        {
+          "speed": 48,
+          "seconds": 8.7,
+          "status": "FINISHED"
+        },
+        {
+          "speed": 64,
+          "seconds": 7.01,
+          "status": "FINISHED"
+        },
+        {
+          "speed": 80,
+          "seconds": 5.85,
+          "status": "FINISHED"
+        },
+        {
+          "speed": 96,
+          "seconds": 5.02,
+          "status": "FINISHED"
+        }
+      ],
+      "windowsManual": "NOT_TESTED",
+      "publishedGameV7": "NOT_TESTED"
+    },
+    {
+      "id": "AF-001",
+      "family": "tectonicCanyon",
+      "sha256": "a7c28c7a211dfffaf9c575a9794b7285f8c284f539ba65a524ce5235719500bf",
+      "surfaces": 26,
+      "fixtures": 104,
+      "geometry": {
+        "minWidth": 12.73,
+        "maxGrade": 0.229,
+        "roadLength": 552.1
+      },
+      "status": "experimental",
+      "format": "PASS",
+      "staticGeometry": "PASS",
+      "nativeMeshDegenerates": 0,
+      "autopilot": [
+        {
+          "speed": 28,
+          "seconds": 9.93,
+          "status": "FINISHED"
+        },
+        {
+          "speed": 36,
+          "seconds": 8.95,
+          "status": "FINISHED"
+        },
+        {
+          "speed": 48,
+          "seconds": 7.77,
+          "status": "FINISHED"
+        },
+        {
+          "speed": 64,
+          "seconds": 6.55,
+          "status": "FINISHED"
+        },
+        {
+          "speed": 80,
+          "seconds": 5.63,
+          "status": "FINISHED"
+        },
+        {
+          "speed": 96,
+          "seconds": 4.92,
+          "status": "FINISHED"
+        }
+      ],
+      "windowsManual": "NOT_TESTED",
+      "publishedGameV7": "NOT_TESTED"
+    },
+    {
+      "id": "FM-001",
+      "family": "fracturedFloatingCubes",
+      "sha256": "2530d36fcfeec8b4b8106f78cad8b79b58102ce27a16d315cc9f2804049b6fae",
+      "surfaces": 28,
+      "fixtures": 96,
+      "geometry": {
+        "minWidth": 12.89,
+        "maxGrade": 0.122,
+        "roadLength": 561.1
+      },
+      "status": "experimental",
+      "format": "PASS",
+      "staticGeometry": "PASS",
+      "nativeMeshDegenerates": 0,
+      "autopilot": [
+        {
+          "speed": 28,
+          "seconds": 11.76,
+          "status": "FINISHED"
+        },
+        {
+          "speed": 36,
+          "seconds": 10.36,
+          "status": "FINISHED"
+        },
+        {
+          "speed": 48,
+          "seconds": 8.74,
+          "status": "FINISHED"
+        },
+        {
+          "speed": 64,
+          "seconds": 7.17,
+          "status": "FINISHED"
+        },
+        {
+          "speed": 80,
+          "seconds": 6.05,
+          "status": "FINISHED"
+        },
+        {
+          "speed": 96,
+          "seconds": 5.21,
+          "status": "FINISHED"
+        }
+      ],
+      "windowsManual": "NOT_TESTED",
+      "publishedGameV7": "NOT_TESTED"
+    }
+  ]
+}
