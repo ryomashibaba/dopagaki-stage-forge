@@ -20,3 +20,4 @@ jobs:
           node-version: '22'
       - run: node --test tests/*.test.mjs
       - run: node tools/validate.mjs examples/format-smoke.json
+      - run: node tools/audit-geometry.mjs examples/format-smoke.json
