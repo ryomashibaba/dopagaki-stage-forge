@@ -1,0 +1,69 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P10-DRIVE-GEOMETRY-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "baseline": "P9 offline original four stage JSONs preserved in separately delivered archive",
+  "archiveName": "STAGE_FORGE_P10_DRIVE_GEOMETRY_FOUR_FAMILIES.zip",
+  "archiveSha256": "7d386ea24588fc95e2207bb90c8b1c01ed3a3ed660d79790c4305406ac3c9403",
+  "publication": "Metadata and explanation ONLY; no stage JSON/generator/user-authored tracks/private runtime/game files posted",
+  "parts": [
+    {
+      "id": "PX-001",
+      "sha256": "80ce6e4af6c76e8ca7506adf27ac2206cf49ab8e5d705379262425372b630450",
+      "surfaces": 32,
+      "fixtures": 114,
+      "p9MaxCurvature": 0.280093,
+      "p10MaxCurvature": 0.043265,
+      "curvatureReductionPercent": 84.6,
+      "minWidthM": 16.05,
+      "obstacleGuideAABBM": 5.48,
+      "routeLengthM": 908.6
+    },
+    {
+      "id": "AR-001",
+      "sha256": "573479375da66b4a5348a5c9c67f9ccbe7b0a5e0c3d68303f10b261bac92cf02",
+      "surfaces": 32,
+      "fixtures": 114,
+      "p9MaxCurvature": 0.104821,
+      "p10MaxCurvature": 0.042489,
+      "curvatureReductionPercent": 59.5,
+      "minWidthM": 14.95,
+      "obstacleGuideAABBM": 5.9,
+      "routeLengthM": 852.8
+    },
+    {
+      "id": "HC-001",
+      "sha256": "b6e6d215a442f5d740239fc7d002d422a7bc99a8af561b02fc0d69a964ce2c8a",
+      "surfaces": 32,
+      "fixtures": 114,
+      "p9MaxCurvature": 0.055458,
+      "p10MaxCurvature": 0.040798,
+      "curvatureReductionPercent": 26.4,
+      "minWidthM": 13.06,
+      "obstacleGuideAABBM": 5.41,
+      "routeLengthM": 705.91
+    },
+    {
+      "id": "TW-001",
+      "sha256": "41f37a5068c2d345b75686eb5a0eae161aa3e88eb9e3e1279c2216940b82f037",
+      "surfaces": 32,
+      "fixtures": 112,
+      "p9MaxCurvature": 0.04753,
+      "p10MaxCurvature": 0.026281,
+      "curvatureReductionPercent": 44.7,
+      "minWidthM": 14.02,
+      "obstacleGuideAABBM": 5.75,
+      "routeLengthM": 621.4
+    }
+  ],
+  "verification": {
+    "standaloneFormat": "4/4 PASS",
+    "staticGeometry": "4/4 PASS",
+    "comparison": "4/4 PASS",
+    "zipExtractExactRegen": "4/4 PASS",
+    "nativeB38Physics": "NOT_RUN",
+    "humanPlaytest": "NOT_RUN",
+    "gameV7Integration": "NOT_RUN"
+  },
+  "caveat": "These are geometry-only measurements of authored routes, not real driving or B3.8 physics. AABB/sparse sample distances cannot establish collision-free native gameplay. Custom authored route behavior with generatedRoute:true is unverified."
+}
