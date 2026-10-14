@@ -1,0 +1,5 @@
+{
+  "schema": "dopagaki.stage-forge.catalog/1",
+  "description": "Only explicitly reviewed and released parts belong in approved. Public publication requires a separate safety check.",
+  "parts": []
+}
