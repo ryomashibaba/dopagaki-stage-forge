@@ -1,0 +1,103 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "note": "Metadata and hashes for the P2 handoff bundle; payloads are NOT published in this PR. Not approved or speed-tested.",
+  "batch": "P2-2026-10-14",
+  "candidates": [
+    {
+      "id": "HC-001",
+      "family": "hollowVerticalShaft",
+      "status": "experimental",
+      "surfaces": 27,
+      "fixtures": 72,
+      "minXYZ": [
+        -78.71,
+        5,
+        -71.71
+      ],
+      "maxXYZ": [
+        88.28,
+        152,
+        340.55
+      ],
+      "sha256": "cce3fd9ee04b45c1648c43a3e41ab540b506d727a50c038f66dbdbfe0cc4f791",
+      "verification": {
+        "b38Format": "PASS",
+        "automatedDriving": "NOT_TESTED",
+        "windowsRendering": "NOT_TESTED",
+        "gameV7": "NOT_TESTED"
+      }
+    },
+    {
+      "id": "TF-001",
+      "family": "foldedMegaPlates",
+      "status": "experimental",
+      "surfaces": 24,
+      "fixtures": 64,
+      "minXYZ": [
+        -105.5,
+        -16.5,
+        -8
+      ],
+      "maxXYZ": [
+        105.5,
+        142.5,
+        462.6
+      ],
+      "sha256": "15688203cb8f39e5daa1707b7ea7cc968da0c82f358fcd069b5d88575d892714",
+      "verification": {
+        "b38Format": "PASS",
+        "automatedDriving": "NOT_TESTED",
+        "windowsRendering": "NOT_TESTED",
+        "gameV7": "NOT_TESTED"
+      }
+    },
+    {
+      "id": "AF-001",
+      "family": "tectonicCanyon",
+      "status": "experimental",
+      "surfaces": 26,
+      "fixtures": 104,
+      "minXYZ": [
+        -106.19,
+        -110,
+        -57.27
+      ],
+      "maxXYZ": [
+        105.9,
+        165,
+        508.51
+      ],
+      "sha256": "a7c28c7a211dfffaf9c575a9794b7285f8c284f539ba65a524ce5235719500bf",
+      "verification": {
+        "b38Format": "PASS",
+        "automatedDriving": "NOT_TESTED",
+        "windowsRendering": "NOT_TESTED",
+        "gameV7": "NOT_TESTED"
+      }
+    },
+    {
+      "id": "FM-001",
+      "family": "fracturedFloatingCubes",
+      "status": "experimental",
+      "surfaces": 28,
+      "fixtures": 96,
+      "minXYZ": [
+        -114.61,
+        3,
+        -35.89
+      ],
+      "maxXYZ": [
+        116.99,
+        144,
+        481.11
+      ],
+      "sha256": "2530d36fcfeec8b4b8106f78cad8b79b58102ce27a16d315cc9f2804049b6fae",
+      "verification": {
+        "b38Format": "PASS",
+        "automatedDriving": "NOT_TESTED",
+        "windowsRendering": "NOT_TESTED",
+        "gameV7": "NOT_TESTED"
+      }
+    }
+  ]
+}
