@@ -1,0 +1,48 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P5-A2-flow-crest-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "source": "P5-A ZIP hash-verified; P4 origin retained; standalone no B3.8 runtime",
+  "parts": [
+    {
+      "id": "PC-001",
+      "sha256": "a7db77be631b7023356855fbab398156f4385dc5ac9d9c75909cdda655e82dca",
+      "bytes": 124570,
+      "surfaces": 31,
+      "fixtures": 146,
+      "format": "PASS",
+      "static": "PASS",
+      "nativePhysics": "NOT_RUN_RUNTIME_UNAVAILABLE"
+    },
+    {
+      "id": "TT-001",
+      "sha256": "09e5124b8ef1996846577c942fdee749ba91e81e5f03209b195a51b9ca9e9fe5",
+      "bytes": 147452,
+      "surfaces": 29,
+      "fixtures": 160,
+      "format": "PASS",
+      "static": "PASS",
+      "nativePhysics": "NOT_RUN_RUNTIME_UNAVAILABLE"
+    },
+    {
+      "id": "ED-001",
+      "sha256": "208e94e1f3105f8d1d2d993149d15b39e7dc3f78915a7eee6c2da33d8c109333",
+      "bytes": 188936,
+      "surfaces": 31,
+      "fixtures": 144,
+      "format": "PASS",
+      "static": "PASS",
+      "nativePhysics": "NOT_RUN_RUNTIME_UNAVAILABLE"
+    },
+    {
+      "id": "SC-001",
+      "sha256": "52d1fe604e53cd5fef4ea37bafa904c9b30df70a9356bcba5caa27c5e2b19392",
+      "bytes": 134955,
+      "surfaces": 32,
+      "fixtures": 161,
+      "format": "PASS",
+      "static": "PASS",
+      "nativePhysics": "NOT_RUN_RUNTIME_UNAVAILABLE"
+    }
+  ]
+}
