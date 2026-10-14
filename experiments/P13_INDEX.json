@@ -1,0 +1,76 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P13-TEMPO-SIGNATURE-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "baseMain": "915fb440d5db5eaac0ead0f607d9bab8e591c4c8",
+  "parent": "P12-ROUTE-CHOICE",
+  "archiveName": "STAGE_FORGE_P13_TEMPO_SIGNATURE_FOUR_FAMILIES.zip",
+  "archiveSHA256": "0879570a13c132e0816910bde9f34458ebd7b3a4a704d7ac87edce3ee1bddc7f",
+  "distribution": "Offline ZIP delivered privately in the conversation, NOT uploaded to public GitHub",
+  "parts": [
+    {
+      "id": "PX-001",
+      "slug": "exchange",
+      "sha256": "530747d69606f82e3e6d3b24c3baecc9dc8fe29a02aaefbb22de18bd66573cba",
+      "bytes": 144339,
+      "surfaces": 32,
+      "fixtures": 114,
+      "designedTempoSections": 5,
+      "localTwoSidePassages": 2,
+      "minSampledRoadWidthMeters": 24.79,
+      "maxSampledRoadWidthMeters": 33.02,
+      "maxAuthoredGuideHazardFreeIntervalMeters": 293.7
+    },
+    {
+      "id": "AR-001",
+      "slug": "atrium",
+      "sha256": "42205f15e30c33ea502bc4b4fe03c4db10627711a72f5fc8bd99baad75647df1",
+      "bytes": 144745,
+      "surfaces": 32,
+      "fixtures": 114,
+      "designedTempoSections": 5,
+      "localTwoSidePassages": 2,
+      "minSampledRoadWidthMeters": 20.49,
+      "maxSampledRoadWidthMeters": 31.35,
+      "maxAuthoredGuideHazardFreeIntervalMeters": 177.38
+    },
+    {
+      "id": "HC-001",
+      "slug": "chambers",
+      "sha256": "796d240df0d1d86e8483bbc64a242ba0ba9ed1a30952c6bfe87cab8cf47a859a",
+      "bytes": 154226,
+      "surfaces": 32,
+      "fixtures": 114,
+      "designedTempoSections": 6,
+      "localTwoSidePassages": 3,
+      "minSampledRoadWidthMeters": 21.89,
+      "maxSampledRoadWidthMeters": 34.62,
+      "maxAuthoredGuideHazardFreeIntervalMeters": 169
+    },
+    {
+      "id": "TW-001",
+      "slug": "tide",
+      "sha256": "ca898336e49bb652ca9910c3758769d240b6485a612127f3461a378616b789fc",
+      "bytes": 143117,
+      "surfaces": 32,
+      "fixtures": 112,
+      "designedTempoSections": 5,
+      "localTwoSidePassages": 2,
+      "minSampledRoadWidthMeters": 22.36,
+      "maxSampledRoadWidthMeters": 36.74,
+      "maxAuthoredGuideHazardFreeIntervalMeters": 302.52
+    }
+  ],
+  "verification": {
+    "format": "4/4 PASS",
+    "staticGeometry": "4/4 PASS",
+    "localTwoSidePassage": "9/9 PASS_STATIC",
+    "immutableArchitectureAndNonchallengeFixtures": "4/4 PASS",
+    "extractAndByteExactRegenerate": "4/4 PASS",
+    "nativeB38Physics": "NOT_RUN",
+    "human": "NOT_RUN",
+    "gameIntegration": "NOT_RUN",
+    "generatedRouteSemantics": "UNVERIFIED"
+  },
+  "caveat": "Lengths are calculated from manually authored guide and fixed hazard locations, not demonstrated time-to-react or collision-free steering. Native B3.8 generatedRoute:true may override authored guide. Prior P4 physical runs do not transfer to P13."
+}
