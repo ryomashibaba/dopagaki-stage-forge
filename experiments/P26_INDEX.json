@@ -1,0 +1,88 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P26-NATIVE-MIDFLIGHT-CAPTURE-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "baselineMain": "915fb440d5db5eaac0ead0f607d9bab8e591c4c8",
+  "parentBatch": "P25-NATIVE-RIDGE-AND-MONUMENT",
+  "parentOriginalZIP_SHA256": "db3067066470ace7decb527bf9d56092abe92bbf26817e05625cc3b29ee886b5",
+  "offlineArchive": "STAGE_FORGE_P26_NATIVE_LANDING_CAPTURE.zip",
+  "offlineArchiveSHA256": "dc4d0e435f305470629a01ba162e4ac8d4e6a98395f2e1e5ae8bb3807740d982",
+  "sourcePublication": "The complete ZIP, original B3.8 physical source modules, any private game/editor files, stage JSON and generators remain offline, NOT in this public PR.",
+  "variants": [
+    {
+      "id": "HN-001",
+      "name": "NEXUS-P26-LEDGE",
+      "role": "RECOMMENDED_EXPERIMENT_ONLY",
+      "artifactSHA256": "43438890b2626adc167569fd74b4577687164fe7193addb01b3c48d52f883aef",
+      "actualChangedRoadYPoints": 20,
+      "architectureChanged": 0,
+      "fixturesChanged": 0,
+      "gamePhysicsChanged": false,
+      "trueGapMeters": 12.805,
+      "originalB38AssistedRunner": "28/44/64/96m/s finished 4/4",
+      "firstLandingZ96m": 318.049,
+      "additionalSpeedStress": "72/80/88/92/100/104m/s finished; 112m/s failed",
+      "humanPlay": "NOT_RUN"
+    },
+    {
+      "id": "HN-001",
+      "name": "NEXUS-P26-CAPTURE",
+      "role": "COMPARATIVE_EXPERIMENT",
+      "artifactSHA256": "b30d42f91296291d298038fd93e0320fb48eea67943f8e4d0b3b2f5bd4a81b00",
+      "actualChangedRoadYPoints": 25,
+      "architectureChanged": 0,
+      "fixturesChanged": 0,
+      "gamePhysicsChanged": false,
+      "trueGapMeters": 12.805,
+      "originalB38AssistedRunner": "28/44/64/96m/s finished 4/4",
+      "firstLandingZ96m": 311.153,
+      "additionalSpeedStress": "72/80/92/100/104m/s finished; 88 and 112m/s failed",
+      "humanPlay": "NOT_RUN"
+    },
+    {
+      "id": "HN-001",
+      "name": "NEXUS-P25-CONTINUOUS-CONTROL",
+      "role": "BYTE_IDENTICAL_PARENT_REFERENCE",
+      "artifactSHA256": "54a1db3e68127e6f5444010e2f68f92613afcb6700e0f93db07ace684ac116b3",
+      "actualChangedRoadYPoints": 0,
+      "gamePhysicsChanged": false,
+      "trueGapMeters": 0,
+      "originalB38AssistedRunner": "28/44/64/96m/s finished 4/4",
+      "humanPlay": "NOT_RUN"
+    }
+  ],
+  "comparison": {
+    "originalP25Compact96FirstLandingZ": 425.943,
+    "p26Recommended96FirstLandingZ": 318.049,
+    "earlierByMeters": 107.894,
+    "originalInitialShelfEndsAtZ": 294.667,
+    "meetsOriginalInitialShelf": false,
+    "engineModulesOriginalSHA256Verified": "5/5",
+    "nativeOriginalRunnerDt": 0.004166666666666667,
+    "gravityMps2": 28,
+    "ballRadiusM": 0.65,
+    "assist": true,
+    "externalSteering": true
+  },
+  "verification": {
+    "cleanZipExtract": "PASS",
+    "manifestFileSHA256": "44/44 PASS",
+    "exactJSONRegeneration": "3/3 PASS",
+    "originalB38AssistedNativeTelemetry": "12/12 exactly reproducible",
+    "additionalSpeedConditions": "14/14 exactly reproducible, includes failed trials",
+    "originalB38BaseTests": "7/7 PASS",
+    "independentContactChecks": "8/8 separate deck landings in modified variants, 12/12 end contacts",
+    "browser": {
+      "origin": "isolated Chromium in-page ESM blobs",
+      "originalRuntimePhysics": "P25 unchanged modules loaded",
+      "diagnosticCustomCamera": "chase/overhead switched",
+      "simulatedArrowKey": "accepted 60 ticks",
+      "assisted96mps": "finished",
+      "JSExceptions": 0,
+      "originalB38EditorCamera": "NOT_RUN",
+      "humanPlay": "NOT_RUN"
+    },
+    "liveGameV7Integration": "NOT_RUN"
+  },
+  "safety": "No actual full human manual play, original editor native camera or deployed-game integration. At 112m/s both modified variants fail, and CAPTURE also fails at 88m/s. B3.8 'finished' is guide-end-near-ground, NOT passage beyond the terminal physical boundary. This public PR does NOT publish source code or track geometry."
+}
