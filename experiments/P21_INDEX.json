@@ -1,0 +1,110 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P21-LAUNCH-ENVELOPE-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "baselineMain": "915fb440d5db5eaac0ead0f607d9bab8e591c4c8",
+  "parent": "P20-TAKEOFF-LANDING",
+  "archiveName": "STAGE_FORGE_P21_LAUNCH_ENVELOPE_FOUR_FAMILIES.zip",
+  "archiveSha256": "43c10556b310b0c3dc39097f9bb724fb60071d5ad5418c07129d0247f1a6e020",
+  "parentP20ArchiveSha256": "47277d77576d9bbc6729f89d965ec7e6e5af9d080f4f67d8d90df89239f005c0",
+  "publicContent": "This index and docs only; no actual stage JSON, original source code, private editor/game/runtime, preview images or user-authored stages published.",
+  "experiments": [
+    {
+      "name": "mirror",
+      "id": "MV-001",
+      "sha256": "200397c960b8b03a5b3a530b191b1ac1f991405e03d0cff0f0d239f9b01047f2",
+      "surfaces": 32,
+      "rideable": 1,
+      "fixtures": 120,
+      "staticAudit": "PASS",
+      "nativePhysics": "NOT_RUN",
+      "decorSparseDistanceM": 14.398
+    },
+    {
+      "name": "nexus",
+      "id": "HN-001",
+      "sha256": "a1b9b417bf8d0f19c594ad72fbc25ff3f8b800638bbb19e25be0c12a4bb0abce",
+      "surfaces": 32,
+      "rideable": 2,
+      "fixtures": 124,
+      "staticAudit": "EXPECTED_GENERIC_FAIL_ONE_DELIBERATE_GAP",
+      "horizontalGapM": 22.806,
+      "landingBelowM": 7.486,
+      "lipGrade": 0.11563,
+      "nativePhysics": "NOT_RUN",
+      "decorSparseDistanceM": 18.806
+    },
+    {
+      "name": "orbit",
+      "id": "OE-001",
+      "sha256": "b44989c9cf7edeeac165fadc8ccad2a934c06b225d20b55fd75468cd2f119506",
+      "surfaces": 32,
+      "rideable": 1,
+      "fixtures": 113,
+      "staticAudit": "PASS",
+      "nativePhysics": "NOT_RUN",
+      "decorSparseDistanceM": 5.607
+    },
+    {
+      "name": "needles",
+      "id": "NA-001",
+      "sha256": "481b113ac7009075f7c7c35fce08ce46fd33d32fb687f7ad7f97e8931140881d",
+      "surfaces": 32,
+      "rideable": 1,
+      "fixtures": 111,
+      "staticAudit": "PASS",
+      "nativePhysics": "NOT_RUN",
+      "decorSparseDistanceM": 16.102
+    },
+    {
+      "name": "nexus-short-gap",
+      "id": "HN-001",
+      "sha256": "67563d1dd93e1c6cd498847aa0e0fea2a48622ba65d3fc7334d0f90e50db460d",
+      "surfaces": 32,
+      "rideable": 2,
+      "fixtures": 124,
+      "staticAudit": "EXPECTED_GENERIC_FAIL_ONE_DELIBERATE_GAP",
+      "horizontalGapM": 16.805,
+      "landingBelowM": 7.486,
+      "lipGrade": 0.10715,
+      "nativePhysics": "NOT_RUN"
+    },
+    {
+      "name": "nexus-long-gap",
+      "id": "HN-001",
+      "sha256": "a8067889e666cfb349c4004fac457372407a82c485edf1e77ac6e73dbc5d583e",
+      "surfaces": 32,
+      "rideable": 2,
+      "fixtures": 124,
+      "staticAudit": "EXPECTED_GENERIC_FAIL_ONE_DELIBERATE_GAP",
+      "horizontalGapM": 28.806,
+      "landingBelowM": 7.486,
+      "lipGrade": 0.12556,
+      "nativePhysics": "NOT_RUN"
+    },
+    {
+      "name": "nexus-continuous-reference",
+      "id": "HN-001",
+      "sha256": "dbe1ed8e2b57f55273d25af0e3a04484f43ef990e42c888373e5efc92d25e63d",
+      "surfaces": 31,
+      "rideable": 1,
+      "fixtures": 124,
+      "staticAudit": "PASS",
+      "nativePhysics": "NOT_RUN"
+    }
+  ],
+  "verification": {
+    "specializedStaticGeometry": "7/7_PASS",
+    "genericSeamAudit": "4_PASS_3_EXPECTED_FAIL_INTENTIONAL_GAPS",
+    "unintendedGapCount": 0,
+    "completeUnpack_SHA256": "33/33_PASS",
+    "byteExactStageReproduction": "7/7_PASS",
+    "nonNativeGravitySpeedSensitivityModel": "72_CASES_GEOMETRY_ONLY",
+    "nativeB38ParserAndMultipleRideableSurfaces": "NOT_RUN",
+    "actualNativeTakeoffFlightLanding": "NOT_RUN",
+    "actualNativeCameraOrManualPlay": "NOT_RUN",
+    "liveGameCompatibility": "NOT_RUN",
+    "generatedRouteHandling": "UNVERIFIED"
+  },
+  "caveat": "Upward lip fixes measured P20 negative takeoff last-row grade; no true native physics tested. The advisory route interpolates through empty air in the 3 real gaps. A point-mass no-drag model records possible geometric contacts under arbitrary assumed g; it is NOT evidence of game physics or playable jump. The original P20 assets are preserved in separately distributed offline package."
+}
