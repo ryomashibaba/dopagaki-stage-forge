@@ -1,0 +1,89 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P24-CLEARANCE-NATIVE-GATE-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "mainBaseline": "915fb440d5db5eaac0ead0f607d9bab8e591c4c8",
+  "offlineArchive": "STAGE_FORGE_P24_CLEARANCE_NATIVE_GATE_SEVEN_TRACKS.zip",
+  "offlineArchiveSHA256": "75f22503d3a3a898df0564ab0b7fcde9a66b50017cdeed734720da10b992d1a4",
+  "parentP23ArchiveSHA256": "fd91603b016c6baefc3a21874c7e6ef24e8e43f17e369b097e3eae5f710df2fb",
+  "publicBoundary": "Only this descriptive index + explanatory document; no course JSON, code generator, previews, private game/editor/physics, P23 source ZIP, user courses or deployment files are published.",
+  "actualChange": {
+    "stage": "OE-001 ORBITAL ENGINE",
+    "modification": "Shift three noncolliding visual stator grid surfaces by fixed horizontal translations while preserving exactly the rideable road, authored route, spawns, fixed hazards, all other architecture and scene fixtures.",
+    "changedVisualOnlySurfaces": {
+      "orbital-stator-8": {
+        "translateMeters": [
+          -15,
+          0,
+          15
+        ],
+        "beforeDenseSampleM": 1.599,
+        "afterDenseSampleM": 15.837
+      },
+      "orbital-stator-9": {
+        "translateMeters": [
+          25,
+          0,
+          5
+        ],
+        "beforeDenseSampleM": 5.024,
+        "afterDenseSampleM": 16.127
+      },
+      "orbital-stator-10": {
+        "translateMeters": [
+          0,
+          0,
+          -30
+        ],
+        "beforeDenseSampleM": 0.842,
+        "afterDenseSampleM": 17.151
+      }
+    },
+    "oldCourseSHA256": "cdc893ec1b5020ccb76ef66fc818d7376ab89d5a26cf9ff45d3cea4f5fe2397a",
+    "newCourseSHA256": "5fe4f638a54b45cc05be512ba7856c8ae426f4326789db9033d81a66f0b866b9",
+    "overallMinSampleDistanceBeforeMeters": 0.842,
+    "overallMinSampleDistanceAfterMeters": 15.837,
+    "denseSampleCount": {
+      "actualRoadControlSurfaceReconstructionPoints": 6817,
+      "decorativeBilinearControlQuadPoints": 18075
+    },
+    "nativeFullMeshCollision": "NOT_RUN",
+    "nativeRendering": "NOT_RUN",
+    "nativePhysics": "NOT_RUN"
+  },
+  "untouchedP23CourseNames": [
+    "mirror",
+    "nexus",
+    "needles",
+    "nexus-short-gap",
+    "nexus-standard-gap",
+    "nexus-continuous-reference"
+  ],
+  "untouchedCourseByteExact": "6/6 PASS",
+  "nexusAudit": {
+    "separatedRideableSurfaces": "2 per true-gap variant",
+    "trueGapWidthsMeters": [
+      12.805,
+      16.805,
+      22.806
+    ],
+    "continuousComparisonGapMeters": 0,
+    "spawnAndRouteSegmentSurfaceReferences": "4/4 PASS_STATIC",
+    "authoredRouteNearestSampledRoadProxyOver5mPoints": {
+      "compact": 6,
+      "short": 7,
+      "standard": 9,
+      "continuous": 0
+    },
+    "caveat": "Proximity-to-sampled-road is only a proxy and should not be interpreted as a certain airborne trajectory. Native B3.8 generatedRoute:true and multiple rideable surface support remain unknown.",
+    "nativeStageImport": "NOT_RUN",
+    "takeoffFlightLanding": "NOT_RUN"
+  },
+  "archiveReproducibility": {
+    "cleanExtractEntries": 30,
+    "sha256PayloadEntries": "29/29 PASS",
+    "generatedJSONByteExact": "7/7 PASS",
+    "staticVerifierAfterExtraction": "PASS"
+  },
+  "limitations": "All spatial measurements are independent dense point-sampling of reconstructed authoring geometry, NOT native final tessellated mesh or any game collision, visibility, dynamic physical playability, human trial, or v7 deployment validation. Architecture panels relocated are collidable:false; this addresses potential visual clipping, not proven ball collision failure. Generic continuous-road seam audit reports 3 expected failures for the true gaps."
+}
