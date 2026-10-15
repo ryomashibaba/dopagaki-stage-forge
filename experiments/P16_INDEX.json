@@ -1,0 +1,81 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P16-ARCHITECTURAL-CONTRAST-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "baseMain": "915fb440d5db5eaac0ead0f607d9bab8e591c4c8",
+  "archive": "STAGE_FORGE_P16_ARCHITECTURAL_CONTRAST_FOUR_NEW_FAMILIES.zip",
+  "archiveSha256": "a3f6c94d02db9df6f9ab44eadfa48c7e38ebe1daf9639e36c11cfea5a7f3e830",
+  "publication": "Metadata and explanatory docs only. Actual new stage JSON, preview images, original generator, and P15 snapshots are retained in offline chat ZIP, not in this Public PR.",
+  "parts": [
+    {
+      "id": "MV-001",
+      "name": "MIRROR VAULT",
+      "family": "obliqueMirrorSlabVault",
+      "sha256": "52ab0c9940a2ca7a10016e0360cbdc7ceb8a03dad34b842edd0f20b944c4aaf4",
+      "bytes": 164155,
+      "surfaces": 32,
+      "fixtures": 120,
+      "hazards": 5,
+      "sampledMinWidthMeters": 21.4,
+      "guideMaxPlanarCurvaturePerM": 0.01322,
+      "localDualSideProbes": 3
+    },
+    {
+      "id": "HN-001",
+      "name": "HYPERBOLIC NEXUS",
+      "family": "longitudinalHourglassHyperboloid",
+      "sha256": "852821d0230958f09ad741bbfdec93908c882e1c585d57ed6585d5ffaf332f96",
+      "bytes": 174031,
+      "surfaces": 32,
+      "fixtures": 124,
+      "hazards": 4,
+      "sampledMinWidthMeters": 20.51,
+      "guideMaxPlanarCurvaturePerM": 0.01754,
+      "localDualSideProbes": 0
+    },
+    {
+      "id": "OE-001",
+      "name": "ORBITAL ENGINE",
+      "family": "spokedCoreWithRadialInOut",
+      "sha256": "57c5a0959a48fe58c7f14800d02bdeae030abadc0b627fa7a84f3ecf9bf1523f",
+      "bytes": 160997,
+      "surfaces": 32,
+      "fixtures": 113,
+      "hazards": 4,
+      "sampledMinWidthMeters": 22.3,
+      "guideMaxPlanarCurvaturePerM": 0.00978,
+      "localDualSideProbes": 2,
+      "radialInsertionXZmeters": 240.3,
+      "hubArcXZmeters": 546,
+      "radialExtractionXZmeters": 250.5
+    },
+    {
+      "id": "NA-001",
+      "name": "NEEDLE ARRAY",
+      "family": "forestOfCantedStructuralSpikes",
+      "sha256": "69c1d90ef6a419a111a32daeb85b0310627191d2314eaa2829d58aca85daaf93",
+      "bytes": 183459,
+      "surfaces": 32,
+      "fixtures": 111,
+      "hazards": 6,
+      "sampledMinWidthMeters": 21.83,
+      "guideMaxPlanarCurvaturePerM": 0.01139,
+      "localDualSideProbes": 2
+    }
+  ],
+  "independentQA": {
+    "format": "4/4 PASS",
+    "staticGeometry": "4/4 PASS",
+    "nearDegenerateControlCells": 0,
+    "declaredSeamGaps": 0,
+    "localDualSideStaticProbes": "7/7 PASS",
+    "routeLatticeProbes": "4/4 PASS",
+    "decorativeNearbySparseSamples": 0,
+    "P15BaselineSHA256": "4/4 VERIFIED",
+    "freshZipExtractByteExactRegeneration": "4/4 PASS",
+    "nativeB38Physics": "NOT_RUN",
+    "humanPlay": "NOT_RUN",
+    "liveGameV7Integration": "NOT_RUN"
+  },
+  "caveat": "All measured results are independent static-geometry estimates only, NOT native B3.8 driving, hazard collisions, safe speed, manual playability or actual gameplay-camera visibility. The B3.8 handling of generatedRoute:true with authored route is unverified. Previous P4 24/24 autopilot outcomes do not apply."
+}
