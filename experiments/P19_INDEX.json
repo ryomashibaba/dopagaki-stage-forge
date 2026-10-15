@@ -1,0 +1,95 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P19-AGGRESSIVE-TRAVERSAL-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "baselineMain": "915fb440d5db5eaac0ead0f607d9bab8e591c4c8",
+  "parentBatch": "P18-ARCHITECTURAL-TRAVERSAL",
+  "offlineArchive": "STAGE_FORGE_P19_AGGRESSIVE_TRAVERSAL_FOUR_FAMILIES.zip",
+  "archiveSHA256": "d7231e851769a236f6a25fa37dea434758fc3b100c0dbd93bfc730775674e70a",
+  "protectedP18ArchiveSHA256": "d993a6d608805e9edd9b93cf12e44c8173e733e6a10f29dd39bb4080774b0121",
+  "publication": "Index + documentation ONLY. Course JSON, generator, P18 protected snapshots, QA scripts and previews remain in offline chat ZIP.",
+  "parts": [
+    {
+      "id": "MV-001",
+      "name": "MIRROR VAULT / DROP-SHUNT EXPRESS",
+      "sha256": "c2c1ea9579feef15a297986e46ed0a7e1587a259f7bde543a83d6bae70176a76",
+      "bytes": 165474,
+      "surfaces": 32,
+      "fixtures": 120,
+      "additionalRoadHeightReliefMeters": 31,
+      "maxControlRowClimbRatio": 0.224,
+      "maxControlRowDescentRatio": -0.456,
+      "aggressiveSections": [
+        "drop_chute",
+        "rebound_crest_candidate",
+        "banked_recovery"
+      ],
+      "static": "PASS"
+    },
+    {
+      "id": "HN-001",
+      "name": "HYPERBOLIC NEXUS / LAUNCH-SPINE",
+      "sha256": "efa644365460f6de0eee94c0f8fe364bf4ee89fd1d31a7899b2dc7673b711fdf",
+      "bytes": 175520,
+      "surfaces": 32,
+      "fixtures": 124,
+      "additionalRoadHeightReliefMeters": 40,
+      "maxControlRowClimbRatio": 0.262,
+      "maxControlRowDescentRatio": -0.674,
+      "aggressiveSections": [
+        "launch_ridge_candidate",
+        "deep_dive",
+        "rebound_climb"
+      ],
+      "static": "PASS"
+    },
+    {
+      "id": "OE-001",
+      "name": "ORBITAL ENGINE / GRAVITY PLUNGE",
+      "sha256": "203d16f8b2ba77a2c41d300e2d770c7f4a520182acaec871d512a26e9ae4018b",
+      "bytes": 162150,
+      "surfaces": 32,
+      "fixtures": 113,
+      "additionalRoadHeightReliefMeters": 44,
+      "maxControlRowClimbRatio": 0.232,
+      "maxControlRowDescentRatio": -0.377,
+      "aggressiveSections": [
+        "gravity_plunge",
+        "orbital_high_bank",
+        "ascent_extraction"
+      ],
+      "sampledNearDecorationMinMeters": 3.672,
+      "static": "PASS"
+    },
+    {
+      "id": "NA-001",
+      "name": "NEEDLE ARRAY / TRIPLE CASCADE",
+      "sha256": "545aa8c19f6ee406676bd316c676883e59149646fc482b26dbd5474f3e5cfb42",
+      "bytes": 184682,
+      "surfaces": 32,
+      "fixtures": 111,
+      "additionalRoadHeightReliefMeters": 39,
+      "maxControlRowClimbRatio": 0.085,
+      "maxControlRowDescentRatio": -0.433,
+      "aggressiveSections": [
+        "cascade_one",
+        "cascade_two",
+        "cascade_three"
+      ],
+      "static": "PASS"
+    }
+  ],
+  "verification": {
+    "nativeFormatLikeStaticGeometry": "4/4_PASS",
+    "physicallyModifiedRideableControlPoints": "4/4_PASS",
+    "aggressiveFeatureSignatures": "12/12_PASS_GEOMETRY_ONLY",
+    "preserved31ArchitectureSurfacesAndBackgroundFixtures": "4/4_PASS",
+    "cleanZipUnpackAllFileSHA256": "PASS",
+    "byteExactRegeneration": "4/4_PASS",
+    "nativeB38Autopilot": "NOT_RUN",
+    "nativeJumpAndLanding": "NOT_RUN",
+    "humanPlay": "NOT_RUN",
+    "gameV7Integration": "NOT_RUN"
+  },
+  "caveat": "All 4 roads are continuous and have NO true air gap. Crest-shaped features are launch candidates only; airborne flight and landing physics NOT RUN. AABB and sparse proximity probes are not native collision assurance; ORBIT decor samples approach to 3.672m. The runtime's handling of generatedRoute:true and an authored route remains unverified."
+}
