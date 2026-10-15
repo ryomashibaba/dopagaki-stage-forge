@@ -1,0 +1,106 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P30-INTERNAL-CROSSINGS-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "mainFrozen": "915fb440d5db5eaac0ead0f607d9bab8e591c4c8",
+  "protectedPreviousArchive": {
+    "name": "STAGE_FORGE_P29_TURN_TRANSITIONS_FOUR_FAMILIES.zip",
+    "sha256": "f3682bc5e65cd736c6c12c567e06b21e574080fbb2442c66cfeba124969255ad"
+  },
+  "privatePackage": {
+    "name": "STAGE_FORGE_P30_INTERNAL_CROSSINGS_FINAL_FOUR_FAMILIES.zip",
+    "sha256": "dfe506239a962535fcabd648d1a529565e45eb2b03ab20f3f960eb668ebd7f8b",
+    "bytes": 23004773,
+    "payloadFiles": 41
+  },
+  "publicationRule": "ONLY this metadata index and one explanatory document on Public GitHub. Original stage JSONs, generators, QA code, all P29 original assets, full ZIP, previews, user's private original game or editor and deployments stay offline.",
+  "actualOriginalStages": [
+    {
+      "id": "CX-001",
+      "name": "CROSSWIND CONFLUENCE",
+      "family": "multiAltitudeSkewJunction",
+      "sha256": "1d9ebf10241c6becfc464a779ff7f97c6306983bb32b861e7eba1d914a2022b7",
+      "roadArchitecture": {
+        "rideableCollidableSurfaces": 1,
+        "noncollidableMonumentalSurfaces": 31,
+        "fixtures": 115,
+        "fixedHazards": 7
+      },
+      "sampledRoadYRangeM": 173.84,
+      "distinctPlanarRoadCrossings": 1,
+      "roadFullCrossSectionLowerBoundVerticalSeparationMeters": 120.652,
+      "minimumReconstructedTriangleRoadToBuildingDistanceMStep3": 19.28096,
+      "maxAuthoredGuidePlanarCurvaturePerM": 0.03155
+    },
+    {
+      "id": "LC-001",
+      "name": "LANTERN CATHEDRAL",
+      "family": "monumentalRoofedTallAtriumThreeBalconies",
+      "sha256": "b4b35cda1af12f7ea58504ab2b385de0f05e9dd80457fd2abb182341fd4ba563",
+      "roadArchitecture": {
+        "rideableCollidableSurfaces": 1,
+        "noncollidableMonumentalSurfaces": 31,
+        "fixtures": 115,
+        "fixedHazards": 7
+      },
+      "sampledRoadYRangeM": 237.97,
+      "distinctPlanarRoadCrossings": 1,
+      "roadFullCrossSectionLowerBoundVerticalSeparationMeters": 70.46,
+      "minimumReconstructedTriangleRoadToBuildingDistanceMStep3": 12.61149,
+      "maxAuthoredGuidePlanarCurvaturePerM": 0.03369,
+      "criticalUnverifiedSteepGrade": "Approx +55% climb and -57% descent in physical mesh control-row calculation. No native physics or drivable proof."
+    },
+    {
+      "id": "GF-001",
+      "name": "GATEFOLD FOUNDRY",
+      "family": "sevenAsymmetricHingedVaultGates",
+      "sha256": "45050d79661444e8818bb1a01dd7374a70cd8d255ea9a10506ccf83a4485e553",
+      "roadArchitecture": {
+        "rideableCollidableSurfaces": 1,
+        "noncollidableMonumentalSurfaces": 31,
+        "fixtures": 115,
+        "fixedHazards": 7
+      },
+      "sampledRoadYRangeM": 192,
+      "distinctPlanarRoadCrossings": 0,
+      "minimumReconstructedTriangleRoadToBuildingDistanceMStep3": 30.486404,
+      "maxAuthoredGuidePlanarCurvaturePerM": 0.03499
+    },
+    {
+      "id": "SC-001",
+      "name": "SPLIT CORE",
+      "family": "skewedMonumentCrossAxialCore",
+      "sha256": "c60dd4406cb185ff5fc669c57d08af851393df19ed6724e1c5bf2ba8403db109",
+      "roadArchitecture": {
+        "rideableCollidableSurfaces": 1,
+        "noncollidableMonumentalSurfaces": 31,
+        "fixtures": 115,
+        "fixedHazards": 7
+      },
+      "sampledRoadYRangeM": 204.05,
+      "distinctPlanarRoadCrossings": 1,
+      "roadFullCrossSectionLowerBoundVerticalSeparationMeters": 116.273,
+      "minimumReconstructedTriangleRoadToBuildingDistanceMStep3": 20.427403,
+      "maxAuthoredGuidePlanarCurvaturePerM": 0.02582,
+      "initialTurnFix": "Authored physical last turn widened; before guide max curvature ~.077/m, after ~.026/m"
+    }
+  ],
+  "qa": {
+    "geometryFormatRoadHazards": "4/4 PASS (independent native-format-shaped preflight)",
+    "specializedXZPlanarCrossingAndRoadWidthVerticalSeparation": "4/4 PASS",
+    "reconstructedTriangleRoadVersus31ArchitectureSurfacesStep2": "4/4 PASS",
+    "reconstructedTriangleRoadVersus31ArchitectureSurfacesStep3": "4/4 PASS",
+    "cleanZipExtractionSHA256Payload": "41/41 PASS",
+    "cleanZipExtractionByteExactJSONRebuild": "4/4 PASS",
+    "cleanZipExtractionRepeatedStaticTests": "PASS",
+    "originalP29ZIPChecksum": "VERIFIED",
+    "originalB38Parser": "NOT_AVAILABLE / NOT_RUN",
+    "actualB38BallCollision": "NOT_RUN",
+    "native28to96mpsDriving": "NOT_RUN",
+    "humanPlayAndCamera": "NOT_RUN",
+    "realJumpAndLanding": "NOT_RUN",
+    "deployedGameV7Integration": "NOT_RUN",
+    "nativeGeneratedRouteSemantics": "UNVERIFIED"
+  },
+  "limitation": "Measured plan-view crossover distances are real authored geometry only and NOT physical links, validated jumping, native clearance or human-drive completion. Triangle meshes are independently reconstructed Catmull-Rom grids and may differ from actual B3.8 renderer/collision meshes."
+}
