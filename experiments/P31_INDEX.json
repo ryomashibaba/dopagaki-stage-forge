@@ -1,0 +1,102 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P31-MONUMENTAL-BAY-DRIVE-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "sourcePublicMain": "915fb440d5db5eaac0ead0f607d9bab8e591c4c8",
+  "parent": "P30-MOVING-READY-BAYS",
+  "originalP30FullArchiveSha256": "957b102a3492091c464d406955ffaf5469aaae8dba8721f9144a9825ed83230e",
+  "offlineArchive": "STAGE_FORGE_P31_MONUMENTAL_BAY_DRIVE.zip",
+  "offlineArchiveSha256": "0db1fc3c2c3cf264e71431bd03a249131f78ec64897a1941d2825f6eff8483dd",
+  "publicationScope": "Only this index and its accompanying documentation; full course JSON, re-generation code, original B3.8 physics, previews, original P30 ZIP, and user assets remain outside Public GitHub.",
+  "outputCourses": [
+    {
+      "file": "nexus-p31-clear.json",
+      "sha256": "2df2708bb1248cf1013d37efef8a2dcb8516fd2c2c46e6e38f211b7dff49cee4",
+      "role": "New monumental geometry + noncolliding center markers",
+      "actualMovingObjects": 0
+    },
+    {
+      "file": "nexus-p31-static.json",
+      "sha256": "2649bafe8d35068fc6ce603fb5e9b59b2cc0f5a882afb6773e67b49c770e8fab",
+      "role": "Same new monumental geometry + real legacy stationary danger center blocks",
+      "actualMovingObjects": 0
+    },
+    {
+      "file": "nexus-p30-clear.json",
+      "sha256": "f06ba96a198def213af5c91ff3039c4530d5096b7804c4653d0bdcd437436e1a",
+      "role": "P30 exact original reference"
+    },
+    {
+      "file": "nexus-p30-static.json",
+      "sha256": "91012d51d55b70ad9653427e263686bf5e9a6d6b7a8c05f908575fb3dabf9a32",
+      "role": "P30 exact original reference"
+    }
+  ],
+  "shape": {
+    "totalSurfaceCount": 32,
+    "originalTakeoffAndIntentionalGap": "UNCHANGED",
+    "originalNonRideableMonumentalSurfaces": "30/30 UNCHANGED",
+    "landingRoadControlPointsChangedPerCourse": 68,
+    "landingRoadControlPointsTotal": 105,
+    "maxPhysicalPointMoveMeters": 4.251,
+    "maxVerticalMoveMeters": 4.056,
+    "maxLateralMoveMeters": 1.273,
+    "originalP30FixturesCount": 139,
+    "newNoncollidingBeamFixtures": 92,
+    "finalFixturesCount": 231,
+    "cap": 256,
+    "architectureZones": [
+      {
+        "name": "SLIDER GALLERY",
+        "character": "canted fin passage",
+        "newVisualBeams": 34,
+        "futureB45Mode": "horizontal slider"
+      },
+      {
+        "name": "ROTATOR ATRIUM",
+        "character": "two concentric 12-chord static crown levels and 8 masts",
+        "newVisualBeams": 32,
+        "futureB45Mode": "rotating arm"
+      },
+      {
+        "name": "PISTON VAULT",
+        "character": "three vertical-tier framed portals and supports",
+        "newVisualBeams": 26,
+        "futureB45Mode": "vertical piston"
+      }
+    ],
+    "originalB38PhysicsUnmodified": 5
+  },
+  "transferRules": {
+    "teamRoles": "STAGE FORGE builds stage geometry only. B3.8 separate team owns moving obstacle engine, per-obstacle collision C modes, editor/UI/QA.",
+    "B45ReportedByUser": "Three moving types and per-object fail/bounce/push collision C implemented in B40-B45, 98/98 automated tests PASS; Windows integration trial not confirmed.",
+    "exactB45ExportedSampleSchemaReceived": false,
+    "B45MovingObjectsInP31": 0,
+    "perObjectCollisionCFieldsSerialized": 0,
+    "unverified": "B45 read/save/physics/render, full Windows integration, original editor, human driving"
+  },
+  "tests": {
+    "P30OriginalArchiveUnmodified": "SHA256 PASS",
+    "parentP30JSONReferences": "2/2 byte-identical",
+    "independentActualPhysicalRoadChangeAndStageData": "2/2 PASS",
+    "sourceOriginalB38LegacyModules": "5/5 unchanged",
+    "originalB38StaticNativeMachineAssistedRuns": "16 original-engine runs, 13 finished, 3 failed",
+    "speedsMps": [
+      28,
+      44,
+      64,
+      96
+    ],
+    "realFailureExamples": [
+      "64m/s fixed danger collider hit under center policy",
+      "96m/s off-course fall under overaggressive anticipation policy"
+    ],
+    "movingB45Physics": "NOT RUN; unavailable exact B45 format",
+    "manualHumanDrive": "NOT RUN",
+    "viewerServer": "5/5 HTTP 200; P31 custom static architecture renderer, NOT original B3.8 editor",
+    "freshZipChecksum": "33/33 PASS",
+    "stageJSONRegen": "4/4 byte-identical",
+    "originalB38TrialLogReplay": "16/16 byte-identical including 3 failures",
+    "gameSiteOrMainChanged": false
+  }
+}
