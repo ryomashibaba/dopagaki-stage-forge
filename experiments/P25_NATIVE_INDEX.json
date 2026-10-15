@@ -1,0 +1,240 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P25-NATIVE-RIDGE-AND-MONUMENT-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "baseMain": "915fb440d5db5eaac0ead0f607d9bab8e591c4c8",
+  "sourceBatch": "P24",
+  "originalP24ArchiveSHA256": "ebd0c97ea977f6949847a616f95103a465a99a25c7a3c0cb938c1c3e397939d5",
+  "offlineArchive": "STAGE_FORGE_P25_NATIVE_RIDGE_AND_MONUMENT.zip",
+  "offlineArchiveSHA256": "db3067066470ace7decb527bf9d56092abe92bbf26817e05625cc3b29ee886b5",
+  "publicScope": "Metadata index and explanation only. No course JSON, generator, QA source, original private engine, telemetry or preview assets.",
+  "runtimeEvidence": {
+    "source": "Owner-local original B3.8 handoff",
+    "originalModuleHashMatches": 5,
+    "engineModifications": 0,
+    "execution": "Original parse, compile, Runner.step in Node; existing assist plus external automatic steering.",
+    "baselineP24": "Continuous then compact; 28/44/64/96m/s; 8 finished",
+    "p25": "Continuous then compact; 28/44/64/96m/s; 8 finished",
+    "notEquivalentTo": "Human play, browser camera/UI import, public v7 integration or all-speed landing-quality approval"
+  },
+  "stages": [
+    {
+      "name": "nexus-p25-compact",
+      "sha256": "5f1c6a4d8e416591ceacc13fb3ec628ab6c5fd610ac84b0e2b4e3a14d7c9360a",
+      "surfaces": 32,
+      "fixtures": 124,
+      "nativeTriangleCount": 8424,
+      "degenerateTriangles": 0,
+      "changedRoadPoints": 64,
+      "changedArchitecture": 6,
+      "gapMeters": 12.805087777910753,
+      "gapVoidVerticalSweeps": 3,
+      "nativeFullMeshChangedRoofsToRoadYSeparationLowerBoundMeters": 119.57766052272936,
+      "runs": [
+        {
+          "startSpeed": 28,
+          "status": "finished",
+          "seconds": 18.18749999999929,
+          "launch": {
+            "t": 7.237499999999909,
+            "position": [
+              24.993445005740334,
+              172.88244102531374,
+              209.36156791901735
+            ],
+            "velocity": [
+              -2.142075845645892,
+              1.9984256655301866,
+              24.54714934054103
+            ]
+          },
+          "firstLanding": {
+            "t": 8.029166666666532,
+            "position": [
+              22.138676785242502,
+              165.72191578887953,
+              228.56455730692187
+            ]
+          },
+          "flightSeconds": 0.7916666666666226,
+          "landingWithinInitialShelf": true,
+          "finishSupportContacts": 2,
+          "finishToDeckEndMeters": 12.724682311871373
+        },
+        {
+          "startSpeed": 44,
+          "status": "finished",
+          "seconds": 13.066666666666245,
+          "launch": {
+            "t": 4.737500000000051,
+            "position": [
+              24.957981789237685,
+              172.90362028998914,
+              209.42304906271497
+            ],
+            "velocity": [
+              -3.428196216895683,
+              3.7149391976765367,
+              41.142828940174134
+            ]
+          },
+          "firstLanding": {
+            "t": 5.600000000000002,
+            "position": [
+              20.453598867481777,
+              165.7289727206902,
+              244.664581553887
+            ]
+          },
+          "flightSeconds": 0.862499999999951,
+          "landingWithinInitialShelf": true,
+          "finishSupportContacts": 2,
+          "finishToDeckEndMeters": 12.88435646681419
+        },
+        {
+          "startSpeed": 64,
+          "status": "finished",
+          "seconds": 9.795833333333098,
+          "launch": {
+            "t": 3.295833333333392,
+            "position": [
+              24.91258725397242,
+              172.93967618532952,
+              209.68397668946884
+            ],
+            "velocity": [
+              -5.024951240854842,
+              5.673403491160616,
+              61.31805622344253
+            ]
+          },
+          "firstLanding": {
+            "t": 4.270833333333411,
+            "position": [
+              16.87544574597589,
+              165.176090907807,
+              268.78297630029596
+            ]
+          },
+          "flightSeconds": 0.9750000000000192,
+          "landingWithinInitialShelf": true,
+          "finishSupportContacts": 2,
+          "finishToDeckEndMeters": 12.739412832654173
+        },
+        {
+          "startSpeed": 96,
+          "status": "finished",
+          "seconds": 6.8624999999999305,
+          "launch": {
+            "t": 2.208333333333338,
+            "position": [
+              25.09211171187222,
+              172.878616508638,
+              209.9505692300512
+            ],
+            "velocity": [
+              -7.969573144786072,
+              8.968593270215319,
+              93.49252220553902
+            ]
+          },
+          "firstLanding": {
+            "t": 4.554166666666728,
+            "position": [
+              -9.647161004975702,
+              116.76998963129685,
+              425.94326605558433
+            ]
+          },
+          "flightSeconds": 2.3458333333333905,
+          "landingWithinInitialShelf": false,
+          "finishSupportContacts": 2,
+          "finishToDeckEndMeters": 13.086164230241604
+        }
+      ]
+    },
+    {
+      "name": "nexus-p25-continuous",
+      "sha256": "54a1db3e68127e6f5444010e2f68f92613afcb6700e0f93db07ace684ac116b3",
+      "surfaces": 31,
+      "fixtures": 124,
+      "nativeTriangleCount": 8632,
+      "degenerateTriangles": 0,
+      "changedRoadPoints": 64,
+      "changedArchitecture": 6,
+      "gapMeters": 0,
+      "gapVoidVerticalSweeps": 0,
+      "nativeFullMeshChangedRoofsToRoadYSeparationLowerBoundMeters": 119.54482458522929,
+      "runs": [
+        {
+          "startSpeed": 28,
+          "status": "finished",
+          "seconds": 17.04166666666602,
+          "launch": null,
+          "firstLanding": null,
+          "flightSeconds": null,
+          "landingWithinInitialShelf": null,
+          "finishSupportContacts": 2,
+          "finishToDeckEndMeters": 20.790232647796785
+        },
+        {
+          "startSpeed": 44,
+          "status": "finished",
+          "seconds": 12.97916666666625,
+          "launch": null,
+          "firstLanding": null,
+          "flightSeconds": null,
+          "landingWithinInitialShelf": null,
+          "finishSupportContacts": 1,
+          "finishToDeckEndMeters": 20.81184791414084
+        },
+        {
+          "startSpeed": 64,
+          "status": "finished",
+          "seconds": 9.504166666666448,
+          "launch": null,
+          "firstLanding": null,
+          "flightSeconds": null,
+          "landingWithinInitialShelf": null,
+          "finishSupportContacts": 1,
+          "finishToDeckEndMeters": 20.860875383730374
+        },
+        {
+          "startSpeed": 96,
+          "status": "finished",
+          "seconds": 6.841666666666598,
+          "launch": null,
+          "firstLanding": null,
+          "flightSeconds": null,
+          "landingWithinInitialShelf": null,
+          "finishSupportContacts": 2,
+          "finishToDeckEndMeters": 20.665055567026613
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "P24ArchiveHash": "PASS",
+    "P24SevenCourseHashes": "7/7 PASS",
+    "nativeParse": "9/9 PASS",
+    "nativeCompileModified": "2/2 PASS",
+    "actualRoadAndBuildingDiff": "2/2 PASS",
+    "originalRuntimeBytes": "5/5 PASS",
+    "independentFinishContactQueries": "8/8 PASS",
+    "independentCompactLandingContactQueries": "4/4 PASS",
+    "compactLipDeparture": "4/4 PASS",
+    "freshFinalZIPPayloadHashes": "36/36 PASS",
+    "freshFullJSONRegeneration": "2/2 BYTE_EXACT",
+    "freshOriginalEngineTelemetry": "4/4 reports, 16/16 runs BYTE_EXACT",
+    "freshIndependentQA": "BYTE_EXACT",
+    "publicCIClaimScope": "Existing structural smoke tests only; private P25 courses are not in public CI"
+  },
+  "unverified": [
+    "Assisted Node simulation of original B3.8 modules only; steering controller is external automation.",
+    "Original browser editor UI import, native camera/renderer, human driving and public v7 integration NOT_RUN.",
+    "96m/s compact lands beyond initial shelf; no all-speed capture-quality approval.",
+    "Noncolliding architecture is not included in ball collisions; no global architecture-to-road mesh separation proof.",
+    "Historic P24 NOT_RUN metadata retained as historical data; current results are in reports."
+  ],
+  "nextPhase": "Isolated original B3.8 browser editor/camera and human controls, then improve 96m/s initial-shelf capture using course geometry only."
+}
