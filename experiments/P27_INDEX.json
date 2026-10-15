@@ -1,0 +1,115 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P27-PLAYER-VISIBILITY-AND-MANUAL-INPUT-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "baseMain": "915fb440d5db5eaac0ead0f607d9bab8e591c4c8",
+  "parentBatch": "P26-NATIVE-MIDFLIGHT-CAPTURE",
+  "offlineArchive": "STAGE_FORGE_P27_PLAYER_VISIBILITY_NATIVE_CAMERA.zip",
+  "offlineArchiveSHA256": "745a1367387008776cb616e3db7ee7d72e0ecae001b0069ff103984186956816",
+  "parentP26ArchiveSHA256": "dc4d0e435f305470629a01ba162e4ac8d4e6a98395f2e1e5ae8bb3807740d982",
+  "publicScope": "Safe description and index only; user receives all executable code, stage JSON, original B3.8 physics source, browser screenshots and parent archive offline, not in this public PR.",
+  "geometryChanges": {
+    "rideableControlPoints": 0,
+    "architectureSurfaces": 0,
+    "fixtures": 0,
+    "spawn": 0,
+    "routes": 0,
+    "gamePhysicsModules": 0
+  },
+  "preservedCourseSHA256": {
+    "nexus-p26-ledge.json": "43438890b2626adc167569fd74b4577687164fe7193addb01b3c48d52f883aef",
+    "nexus-p26-capture.json": "b30d42f91296291d298038fd93e0320fb48eea67943f8e4d0b3b2f5bd4a81b00",
+    "nexus-p26-continuous-control.json": "54a1db3e68127e6f5444010e2f68f92613afcb6700e0f93db07ace684ac116b3"
+  },
+  "browser": {
+    "type": "NEW isolated custom Chromium Canvas diagnostic, NOT original B3.8 editor renderer",
+    "originalRuntimePhysicsUnmodified": "5/5 SHA256 matched P26 original",
+    "sourceOfMotion": "unchanged B3.8 Runner.step and actual three stage JSONs",
+    "cameraPresets": [
+      "P27 low chase 22m behind +6m high",
+      "P26 reference chase 29m behind +15m high",
+      "overhead"
+    ],
+    "input": [
+      "arrow/A-D keyboard",
+      "two on-screen steering buttons",
+      "AUTO vs MANUAL (external controller separate)",
+      "native B3.8 assist on/off separate",
+      "telemetry JSON export"
+    ],
+    "nativeBrowserAssisted96": "finished",
+    "P25ContinuousBrowserAssisted96": "finished",
+    "automatedKeyboardLeftVsRightDifferenceXMeters": 1.7205474709245685,
+    "assistedNativeOffTest": "A key 60 physics ticks accepted",
+    "JavascriptExceptions": 0,
+    "humanPlay": "NOT_RUN",
+    "originalB38EditorCamera": "NOT_RUN",
+    "normalFileOrLocalhostBrowserNavigation": "BLOCKED_BY_ENVIRONMENT",
+    "browserBootstrap": "about:blank + in-memory ESM Blob of unchanged source"
+  },
+  "sourceGeometryCameraRayTest": {
+    "stage": "unchanged P26 LEDGE",
+    "speedsMps": [
+      28,
+      44,
+      64,
+      96
+    ],
+    "trajectory": "original B3.8 assisted 4 speed records",
+    "examinedZRangeMeters": [
+      130,
+      480
+    ],
+    "aheadTargetsMeters": [
+      30,
+      60,
+      90
+    ],
+    "target": "authored road guide, with +1.5m Y offset",
+    "occlusionGeometry": "tessellated visual nonrideable surface TOP triangles; does not include physical road occlusion",
+    "totalRays": 321,
+    "oldP26Camera": {
+      "backMeters": 29,
+      "heightAboveBallMeters": 15,
+      "occludedRays": 10,
+      "percent": 3.1,
+      "at96": {
+        "rays": 42,
+        "occluded": 9,
+        "percent": 21.4
+      }
+    },
+    "P27LowCamera": {
+      "backMeters": 22,
+      "heightAboveBallMeters": 6,
+      "occludedRays": 0,
+      "percent": 0,
+      "at96": {
+        "rays": 42,
+        "occluded": 0,
+        "percent": 0
+      }
+    },
+    "elevatedDiagnostics": {
+      "backMeters": 38,
+      "heightAboveBallMeters": 26,
+      "occludedRays": 50,
+      "percent": 15.6
+    },
+    "majorOldOccluder": "hyperbolic-shell-1-6",
+    "visualOnly": "NOT real user sightline or original editor visibility"
+  },
+  "verification": {
+    "freshArchiveExtract": "PASS",
+    "checksumManifest": "38/38 PASS",
+    "original5RuntimeModulesUnmodified": "5/5 PASS",
+    "threeTrackJSONByteIdenticalToP26": "3/3 PASS",
+    "originalB38ThreeTracksFourSpeedsTelemetryReplayedByteExact": "12/12 PASS",
+    "isolatedChromiumAutomatedKeyboardAndCameras": "PASS",
+    "originalB38CoreUnitTests": "PASS",
+    "humanManualCompletion": "NOT_RUN",
+    "originalNativeEditorCamera": "NOT_RUN",
+    "publicGameV7": "NOT_RUN"
+  },
+  "caution": "The original P26 LEDGE 112m/s fail is unchanged, and no new high-speed physics improvement is claimed. Improvements are to the separate diagnostic camera/player input and limited static visibility metric, not to original game visuals or course geometry."
+}
