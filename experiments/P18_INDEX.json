@@ -1,0 +1,110 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P18-ARCHITECTURAL-TRAVERSAL-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "parent": "P17-DRIVING-IDENTITY",
+  "baselineMain": "915fb440d5db5eaac0ead0f607d9bab8e591c4c8",
+  "offlineArchive": "STAGE_FORGE_P18_ARCHITECTURAL_TRAVERSAL_FOUR_FAMILIES.zip",
+  "offlineArchiveSha256": "d993a6d608805e9edd9b93cf12e44c8173e733e6a10f29dd39bb4080774b0121",
+  "publicBoundary": "This index and a design note only; actual stage JSON/generator/QA scripts, private runtime, previews and P17 originals remain in separate conversation ZIP.",
+  "parts": [
+    {
+      "id": "MV-001",
+      "slug": "mirror",
+      "sha256": "0b7a3b6d2085b4ee50d56064fc90ae8d0be890fd5c8d4f2655821b6b7e650e6c",
+      "surfaces": 32,
+      "fixtures": 120,
+      "widthRangeMeters": [
+        19.51,
+        45.59
+      ],
+      "peakBankDegrees": 16.8,
+      "guideHazard3DAABBProxyMeters": 4.6,
+      "crossSectionCrownDeltaMeters": [
+        -1.813,
+        2.175
+      ],
+      "centerElevationChangePeakMeters": 2.197,
+      "localTwoSideProbes": 3,
+      "static": "PASS",
+      "nativePhysics": "NOT_RUN"
+    },
+    {
+      "id": "HN-001",
+      "slug": "nexus",
+      "sha256": "1c22cab443171c80be415117878df71b2605d364d0bb3a5ac4a781f826a02c51",
+      "surfaces": 32,
+      "fixtures": 124,
+      "widthRangeMeters": [
+        16.43,
+        45.86
+      ],
+      "peakBankDegrees": 30.6,
+      "guideHazard3DAABBProxyMeters": 8.49,
+      "crossSectionCrownDeltaMeters": [
+        -2.007,
+        2.463
+      ],
+      "centerElevationChangePeakMeters": 2.683,
+      "localTwoSideProbes": 0,
+      "static": "PASS",
+      "nativePhysics": "NOT_RUN"
+    },
+    {
+      "id": "OE-001",
+      "slug": "orbit",
+      "sha256": "79ebcf326e576721654106f58a7da3576fa918930151a57d3f4e4577234072ca",
+      "surfaces": 32,
+      "fixtures": 113,
+      "widthRangeMeters": [
+        20.59,
+        45.97
+      ],
+      "peakBankDegrees": 20,
+      "guideHazard3DAABBProxyMeters": 4.19,
+      "crossSectionCrownDeltaMeters": [
+        -0.652,
+        1.55
+      ],
+      "centerElevationChangePeakMeters": 2.193,
+      "localTwoSideProbes": 2,
+      "static": "PASS",
+      "nativePhysics": "NOT_RUN"
+    },
+    {
+      "id": "NA-001",
+      "slug": "needles",
+      "sha256": "cfe9878009c47c0791ccfd79f7273a2dada8eb262f83a9421524b63850a09139",
+      "surfaces": 32,
+      "fixtures": 111,
+      "widthRangeMeters": [
+        18.69,
+        52.2
+      ],
+      "peakBankDegrees": 15.4,
+      "guideHazard3DAABBProxyMeters": 4.18,
+      "crossSectionCrownDeltaMeters": [
+        -1.406,
+        1.19
+      ],
+      "centerElevationChangePeakMeters": 0.773,
+      "localTwoSideProbes": 2,
+      "static": "PASS",
+      "nativePhysics": "NOT_RUN"
+    }
+  ],
+  "verification": {
+    "standaloneFormatAndStaticGeometry": "4/4 PASS",
+    "preservedP17ArchitectureAndNonChallengeFixtures": "4/4 PASS",
+    "genuinelyAlteredPhysicalRoadCrossSection": "4/4 PASS",
+    "localTwoSideStaticAABBProbes": "7/7 PASS",
+    "roadGuideMembershipStatic": "4/4 PASS",
+    "sourceP17StageSHA256": "4/4 VERIFIED",
+    "cleanUnzipChecksumsAndByteExactRegeneration": "4/4 PASS",
+    "fourQAScriptsRerun": "4/4 PASS",
+    "B38NativePhysics": "NOT_RUN",
+    "humanManualPlay": "NOT_RUN",
+    "gameV7Integration": "NOT_RUN"
+  },
+  "disclaimers": "Road curvature, width, bank and AABB clearances are static authoring-space proxies, not native ball dynamics, collision or safe manual passage. Native generatedRoute:true treatment unknown. Previously reported P4 physics runs do not apply."
+}
