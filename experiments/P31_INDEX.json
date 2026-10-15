@@ -1,0 +1,111 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P31-SPATIAL-RUN-REFINEMENT-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "frozenPublicMain": "915fb440d5db5eaac0ead0f607d9bab8e591c4c8",
+  "protectedP30FullArchiveSHA256": "dfe506239a962535fcabd648d1a529565e45eb2b03ab20f3f960eb668ebd7f8b",
+  "offlineP31ArchiveName": "STAGE_FORGE_P31_SPATIAL_RUN_REFINEMENT_FOUR_FAMILIES.zip",
+  "offlineP31ArchiveSHA256": "ef32b6aff8093e0795f5d7607a78fe77f368529d46d6b9cf43ac8c7ee11e7056",
+  "offlineArchiveBytes": 24756768,
+  "publicBoundary": "This index and docs ONLY; actual stage JSONs, generator source, full P30 archive, QA source and images delivered privately in user ZIP, not this Public Draft PR.",
+  "parts": [
+    {
+      "id": "CX-001",
+      "slug": "exchange",
+      "sha256": "37c6a5318fb4a88a78a65e6ffe193861c423cd39eca0b2f9f9a2d66fd57714ea",
+      "actualRoadControlPointsChanged": 154,
+      "architecturalSurfacesChanged": 0,
+      "fixedHazardsBeforeAfter": [
+        7,
+        9
+      ],
+      "authoredRoadYSpanMeters": 175.92,
+      "minSampledWidthMeters": 32.31,
+      "controlRowUpDownGrade": [
+        -0.0501,
+        -0.1538
+      ],
+      "nonlocalRoadCrossings": 1,
+      "verticalSeparationFullCrossSectionM": 121.6,
+      "reconstructedTriangleMinDistanceStep3M": 15.64279
+    },
+    {
+      "id": "LC-001",
+      "slug": "lantern",
+      "sha256": "52b804d9b18236b17ac4c5b87f4404cd2ca03193b8958e4c78f9e7cef15d3165",
+      "actualRoadControlPointsChanged": 154,
+      "architecturalSurfacesChanged": 31,
+      "architecturalYFactor": 0.84,
+      "fixedHazardsBeforeAfter": [
+        7,
+        9
+      ],
+      "authoredRoadYSpanMeters": 203.44,
+      "minSampledWidthMeters": 34.13,
+      "controlRowUpDownGrade": [
+        0.4644,
+        -0.4766
+      ],
+      "P30UpDownGrade": [
+        0.5529,
+        -0.5674
+      ],
+      "nonlocalRoadCrossings": 1,
+      "verticalSeparationFullCrossSectionM": 58.517,
+      "reconstructedTriangleMinDistanceStep3M": 9.672923,
+      "nativeCollisionCaution": "Reconstructed clearance just over 9m. Original native collision and camera NOT tested."
+    },
+    {
+      "id": "GF-001",
+      "slug": "forge",
+      "sha256": "5c0c06d236faa462d12bb3f29e555b9cf6dbb148d94d7158c3b03a2009ddf228",
+      "actualRoadControlPointsChanged": 154,
+      "architecturalSurfacesChanged": 0,
+      "fixedHazardsBeforeAfter": [
+        7,
+        9
+      ],
+      "authoredRoadYSpanMeters": 192.01,
+      "minSampledWidthMeters": 34.02,
+      "controlRowUpDownGrade": [
+        -0.0607,
+        -0.2192
+      ],
+      "nonlocalRoadCrossings": 0,
+      "reconstructedTriangleMinDistanceStep3M": 26.847563
+    },
+    {
+      "id": "SC-001",
+      "slug": "prismcore",
+      "sha256": "0024c3ae87db338a4ec47422ab5f4657aa4c2c2b1a21a2dffbfffbd5e3851e71",
+      "actualRoadControlPointsChanged": 155,
+      "architecturalSurfacesChanged": 0,
+      "fixedHazardsBeforeAfter": [
+        7,
+        9
+      ],
+      "authoredRoadYSpanMeters": 210.67,
+      "minSampledWidthMeters": 31.23,
+      "controlRowUpDownGrade": [
+        -0.0332,
+        -0.1891
+      ],
+      "nonlocalRoadCrossings": 1,
+      "verticalSeparationFullCrossSectionM": 116.369,
+      "reconstructedTriangleMinDistanceStep3M": 17.907593
+    }
+  ],
+  "verification": {
+    "freshZipExtractSHA256Payload": "39/39 PASS",
+    "exactJSONRegeneration": "4/4 PASS",
+    "independentStructureStaticGeometry": "4/4 PASS",
+    "actualP30toP31RealRoadChanges": "4/4 PASS",
+    "geometryCrossovers": "4/4 PASS; 3 high/low crossings, 1 intentionally no crossing",
+    "independentReconstructedTriangleStep2AndStep3": "4/4 PASS at each tested density with minimum 9m threshold",
+    "nativeB38ImportPhysicsCollisionSpeed": "NOT_RUN",
+    "nativeCameraHumanPlay": "NOT_RUN",
+    "nativeGeneratedRouteInterpretation": "UNVERIFIED",
+    "publicGameV7Integration": "NOT_RUN"
+  },
+  "caveats": "P31 independently reconstructed mesh uses a disclosed 9m threshold (P30 had 12m), with LANTERN minimum ~9.67m. All QA results are static and cannot confirm actual game collider safety, camera, jump/landing, speed, or human passage."
+}
