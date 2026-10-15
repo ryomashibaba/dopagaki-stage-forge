@@ -1,0 +1,81 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P28-THREE-BEAT-ROADPLAY-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "baselineMain": "915fb440d5db5eaac0ead0f607d9bab8e591c4c8",
+  "parent": "P27-PLAYER-VISIBILITY",
+  "offlineArchive": "STAGE_FORGE_P28_THREE_BEAT_ROADPLAY.zip",
+  "offlineArchiveSHA256": "7992e3c5b10e220f4d02bd0b12006566bcaa696adcc8e3d5c52ce70229d6c6f9",
+  "P27OriginalArchiveSHA256": "745a1367387008776cb616e3db7ee7d72e0ecae001b0069ff103984186956816",
+  "publicScope": "Only this safe metadata index and explanatory document, not course JSON, generator, original 5 B3.8 source files, QA scripts, screenshots, existing user data, or deploy files.",
+  "actualProduction": {
+    "courses": [
+      "nexus-p28-training (3 noncolliding marker placeables)",
+      "nexus-p28-challenge (3 real solid danger placeables)"
+    ],
+    "challengeZapproxMeters": [
+      498.314,
+      569.497,
+      634.445
+    ],
+    "challengeSides": [
+      "left",
+      "right",
+      "left"
+    ],
+    "totalSurfaceCountPerStage": 32,
+    "rideableSurfacesPerStage": 2,
+    "fixturesBefore": 124,
+    "fixturesAfter": 127,
+    "collidableRoadGeometryChanged": false,
+    "monumentalArchitectureChanged": false,
+    "originalCourseVariantsPreservedByteExact": 3,
+    "originalPhysicsModulesPreservedByteExact": 5,
+    "practiceCheckpoints": {
+      "approach": "Real supported B3.8 Runner position after assisted replay from the true initial spawn, around Z320m for four initial speeds",
+      "purpose": "Training only, never full-course completion"
+    }
+  },
+  "realB38AssistedPhysics": {
+    "baseline28_64_96WithDiscreteKeyInput": "3/3 finished on original LEDGE",
+    "training28_64_96WithDiscreteKeyInput": "3/3 finished",
+    "challenge28_64_96WithCenterlineDiscreteKeyInput": "3/3 failed: 赤い障害物に衝突",
+    "challenge28_64_96WithHazardAwareDiscreteKeyPolicy": "3/3 finished for lead 80m/lateral 12m, other settings failed",
+    "training28_64_96WithKeyDecisionEvery100ms": "3/3 finished, 66/30/11 key state changes",
+    "manualHumanCompletion": "NOT_RUN",
+    "nativeAssist": "ON (B3.8 built-in heading stabilization; distinct from external steering)",
+    "nativeAssistOffHumanCompletion": "NOT_RUN",
+    "warning": "All key inputs were deterministic machine decisions based on known world positions/velocities. Do not conflate with realistic human perception, skill or completion; original Runner.finished is near route end grounded detection."
+  },
+  "browser": {
+    "environment": "Isolated Chromium about:blank with unchanged native B3.8 modules injected as in-memory ESM Blobs because standard localhost browsing is restricted",
+    "customCanvasViewer": "REAL",
+    "standardLocalNodeHTTPStaticResources": "HTTP 200 for /, /viewer/viewer.js, /viewer/checkpoints.json",
+    "courseSelector": "TRAINING/CHALLENGE/three unmodified P26 reference courses",
+    "realKeyboardInput": "ArrowRight 60 original-physics ticks verified",
+    "landingPractice": "Real B3.8 checkpoint via Runner.resumeAt; visibly marked not full start",
+    "diagnosticWarnings": "NEXT LEFT/RIGHT hazard and distance",
+    "javascriptExceptions": 0,
+    "officialB38Editor": "NOT_RUN",
+    "humanManualFinish": "NOT_RUN"
+  },
+  "verification": {
+    "freshExtract": "PASS",
+    "payloadSHA256": "47/47 PASS",
+    "standaloneRebuild": "5/5 byte-identical JSON",
+    "originalP27ZIP": "SHA256 VERIFIED",
+    "originalNativeModules": "5/5 SHA256-like byte identical",
+    "preservedParentRoads": "3/3 byte identical",
+    "nativeTrainingChallengeCollisionChecks": "PASS",
+    "nativeRealHazardAvoidanceProbe": "3/3 machine-aided finish",
+    "originalGamePhysicsChanged": false,
+    "publicGameDeployment": "NONE"
+  },
+  "unresolved": [
+    "human manual play",
+    "native original editor camera",
+    "assist-off steering dynamics at game speeds",
+    "proper game integration",
+    "P26 112m/s fall still unresolved"
+  ]
+}
