@@ -1,0 +1,85 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P24-ORBITAL-CLEARANCE-NATIVE-GATE-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "baseMain": "915fb440d5db5eaac0ead0f607d9bab8e591c4c8",
+  "sourceBatch": "P23-LANDING-HANDOFF",
+  "offlineArchive": "STAGE_FORGE_P24_NATIVE_GATE_AND_ORBITAL_CLEARANCE.zip",
+  "offlineArchiveSHA256": "ebd0c97ea977f6949847a616f95103a465a99a25c7a3c0cb938c1c3e397939d5",
+  "originalP23ArchiveSHA256": "fd91603b016c6baefc3a21874c7e6ef24e8e43f17e369b097e3eae5f710df2fb",
+  "publicScope": "This index and design note only; 7 stage JSONs, original generator, private stage archives, actual preview imagery and nonpublic game source are not committed.",
+  "roadPlayStatus": "NO GAME PHYSICS PASS CLAIMED",
+  "modifiedStage": {
+    "id": "OE-001",
+    "name": "ORBITAL ENGINE",
+    "artifactSha256": "766bed2ec470ac7d6cd913fcfd6ba6a1de68abcdb853af371a3a5fa86e854eab",
+    "originalArtifactSha256": "cdc893ec1b5020ccb76ef66fc818d7376ab89d5",
+    "realCollidableRoadChanged": false,
+    "realFixturesChanged": false,
+    "authoredRouteChanged": false,
+    "spawnChanged": false,
+    "noncollidingArchitectureSurfacesMoved": 3,
+    "noncollidingArchitectureSurfacesExactlyPreserved": 28,
+    "translationsMeters": {
+      "orbital-stator-8": [
+        -25,
+        0,
+        0
+      ],
+      "orbital-stator-9": [
+        25,
+        0,
+        0
+      ],
+      "orbital-stator-10": [
+        0,
+        0,
+        -24
+      ]
+    },
+    "denserSampling": {
+      "roadRows": 241,
+      "roadColumns": 21,
+      "decorationCellEdgeDivisions": 8,
+      "oldGlobalNearestMeters": 0.605,
+      "newGlobalNearestMeters": 11.28,
+      "oldNearSurfaceDistancesMeters": {
+        "orbital-stator-8": 0.856,
+        "orbital-stator-9": 2.188,
+        "orbital-stator-10": 0.605
+      },
+      "newNearSurfaceDistancesMeters": {
+        "orbital-stator-8": 13.194,
+        "orbital-stator-9": 12.496,
+        "orbital-stator-10": 11.28
+      },
+      "claimScope": "bicubic interpolation point-to-point ONLY, not continuous triangle intersections, native renderer or swept-ball collisions"
+    }
+  },
+  "unchangedStageArtifacts": {
+    "mirror.json": "09e784d9f8a93e5d5aeb33cd49a9fd2120631314f26e75416c4d6d0b658ae49d",
+    "needles.json": "16d722e946e8acf40c7f9df27eae5f968032ed678111e043efad517233e71f8a",
+    "nexus.json": "e5164d61f9675566dd86a0fb4120821bc408e1cb9b7a8f2d934a4070cc4231d5",
+    "nexus-short-gap.json": "dc731d7f5daf00112ff525182da644e54b9f7dc821eeffb82c3587d9b2f73121",
+    "nexus-standard-gap.json": "321777ba64cb164f714029487b46e98bd81fa3e55568441b0dd9512870e25761",
+    "nexus-continuous-reference.json": "a10b77172b4ac4f409ff0ff42ffa4d019c739e044000dd392f766c2eae59485d"
+  },
+  "verification": {
+    "P23ParentArchiveSHA256": "PASS",
+    "offlineFormatAndStaticGeometry": "7/7 PASS",
+    "nexusTrueGapsGenericContinuity": "3/3 EXPECTED FAIL (identical P23 data)",
+    "otherContinuousCoursesGenericContinuity": "4/4 PASS",
+    "unknownGaps": 0,
+    "fullPhysicalRoadAndFixtureJSONUnchanged": "7/7 PASS",
+    "offlineRegeneration": "7/7 BYTE_EXACT",
+    "freshZIPExtract": "PASS",
+    "completeChecksumManifest": "26/26 PASS",
+    "nativeB38Import": "NOT_RUN",
+    "nativeCollision": "NOT_RUN",
+    "nativeJumpAndLanding": "NOT_RUN",
+    "humanPlay": "NOT_RUN",
+    "gameV7Integration": "NOT_RUN",
+    "generatedRouteSemantics": "UNVERIFIED"
+  },
+  "note": "Sampling density increased substantially versus P23: formerly reported 3.166m sparse estimate underestimated proximity. P24 preserves all NEXUS control and gap variants exactly; only moves three noncolliding ORBITAL stator panels. No real native B3.8 verification or stage catalog approval."
+}
