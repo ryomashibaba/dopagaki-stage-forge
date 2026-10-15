@@ -1,0 +1,105 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P32-SKYFALL-SPAN-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "publicBase": "915fb440d5db5eaac0ead0f607d9bab8e591c4c8",
+  "parent": "P31-MONUMENTAL-BAY-DRIVE",
+  "sourceP31FullZIP_SHA256": "0db1fc3c2c3cf264e71431bd03a249131f78ec64897a1941d2825f6eff8483dd",
+  "offlineOutput": "STAGE_FORGE_P32_SKYFALL_SPAN.zip",
+  "offlineOutputSHA256": "d64ea421bdff32e0804990cfbe317389ca2f002f6e98dd0b44a0c2f287ca78bd",
+  "publicScope": "This index and docs only. Real course JSONs, generator, native physics, tests, custom viewer, previews, nested full P31 archive and user sources are in the private offline ZIP.",
+  "courseData": [
+    {
+      "name": "nexus-p32-rift-clear",
+      "sha256": "fa4d9d6d74ffcb652849298318f628bfe350d3efb24bb889a9280bcc006aa764",
+      "role": "main REAL aggressive 3D skyfall with practice markers",
+      "originalB38AssistedConditions": "8/8 finished"
+    },
+    {
+      "name": "nexus-p32-rift-static",
+      "sha256": "d177ec3ef213ded094701e72d878f2e82b9338e1757ea141633247ddebd7271e",
+      "role": "aggressive actual road with 3 true legacy stationary dangers",
+      "originalB38AssistedConditions": "7/8 finished, failure 28m/s anticipation80 danger collision"
+    },
+    {
+      "name": "nexus-p32-flow-clear",
+      "sha256": "d045d7aad6a9cb5a8765ddfc2d7002005dc953ced834a131466f95660767d0b3",
+      "role": "moderated 3D banked skyfall with practice markers",
+      "originalB38AssistedConditions": "7/8 finished, failure 96m/s anticipation80 off course"
+    },
+    {
+      "name": "nexus-p32-flow-static",
+      "sha256": "f801238bf9b02b38fc4317a5aa9f0431adb90f8feb0de49654ac39b625b263c9",
+      "role": "moderated actual road with 3 true legacy stationary dangers",
+      "originalB38AssistedConditions": "7/8 finished, failure 96m/s anticipation80 off course"
+    },
+    {
+      "name": "nexus-p31-clear",
+      "sha256": "2df2708bb1248cf1013d37efef8a2dcb8516fd2c2c46e6e38f211b7dff49cee4",
+      "role": "P31 original byte-identical protected comparison"
+    },
+    {
+      "name": "nexus-p31-static",
+      "sha256": "2649bafe8d35068fc6ce603fb5e9b59b2cc0f5a882afb6773e67b49c770e8fab",
+      "role": "P31 original byte-identical protected comparison"
+    }
+  ],
+  "geometry": {
+    "courseZones": "Existing P31 3 chambers unmodified + new overhanging skyfall transit Z around 340–453m",
+    "modifiedRealDriveControlPointsPerNewStage": 25,
+    "riftMaxRealXYZMeters": 9.644,
+    "riftMaxYDeltaMeters": 9.098,
+    "riftMaxXDeltaMeters": 5.454,
+    "flowMaxXYZMeters": 5.401,
+    "newStaticNoncollidingOriginalB38Beams": {
+      "suspendedCrossSpans": 6,
+      "largeSupportMasts": 6,
+      "diagonalAerialBraces": 6,
+      "total": 18
+    },
+    "coursesHaveSurfaces": 32,
+    "fixturesPerNewStage": 249,
+    "fixturesCapacity": 256,
+    "spareForOfficialB45": 7,
+    "originalTakeoffAndInitialLandingRows": "PRESERVED",
+    "oldP31MonumentalSurfaces": "30/30 PRESERVED",
+    "oldP31Fixtures": "231/231 PRESERVED",
+    "futureThreeMovingHazardBayCenters": "PRESERVED",
+    "realRoadGuide": "UPDATED ONLY FOR MIDCOURSE SCULPT WHERE NEEDED",
+    "movingFixtureFieldsSerialized": 0,
+    "originalB38PhysicalModulesChanged": 0
+  },
+  "testing": {
+    "originalPhysics": "five original legacy B3.8 modules unchanged, native assist ON, machine-supplied discrete steering",
+    "speedsMps": [
+      28,
+      44,
+      64,
+      96
+    ],
+    "policies": [
+      "center",
+      "anticipation80"
+    ],
+    "runs": 32,
+    "assistedFinished": 29,
+    "failed": 3,
+    "failures": [
+      "RIFT STATIC @28m/s anticipation80: real stationary danger collision",
+      "FLOW CLEAR @96m/s anticipation80: fell off actual road",
+      "FLOW STATIC @96m/s anticipation80: fell off actual road"
+    ],
+    "nativeFirstSeparateDeckLanding96ZApproxMeters": 318.303,
+    "checksumFreshArchive": "36/36 PASS",
+    "stageJSONByteRebuild": "6/6 PASS",
+    "originalPhysicalProbeByteReplay": "32/32 PASS including failures",
+    "originalB38UnitTests": "PASS",
+    "independentSurfaceAndFixturePreservation": "PASS",
+    "customStandaloneViewerHTTP": "8/8 HTTP 200; original B3.8 editor NOT RUN",
+    "officialB45MovingHazardsImport": "NOT RUN, official exact B45 JSON still unavailable",
+    "perObstacleCollisionModesC": "REPORTED IMPLEMENTED IN SEPARATE BRANCH, NOT TESTED OR SERIALIZED HERE",
+    "humanManualCompletion": "NOT RUN",
+    "siteIntegration": "NOT RUN"
+  },
+  "publication": "EXPERIMENTAL only; no main merge, no original physics/editor modification, no deployed game change."
+}
