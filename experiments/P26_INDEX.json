@@ -53,7 +53,7 @@
       "maxSampledBankDegrees": 22.3,
       "staticGuideHazardAABBProxyMeters": 4.14,
       "reconstructedTriangleNearestMetersStep3": ">=16",
-      "realRoadXSpanMeters": 190.3
+      "realRoadXSpanMeters": 189.2
     },
     {
       "id": "KH-001",
