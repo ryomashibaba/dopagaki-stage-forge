@@ -1,0 +1,105 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P30-MOVING-READY-THREE-ARCHITECTURE-BAYS-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "branchDivision": {
+    "thisTrack": "Stage geometry and course authoring ONLY",
+    "otherB38Branch": "Moving hazards 3 kinds, editor/UI, physical engine, later collision mode C",
+    "reportedMovingKinds": [
+      "horizontal-slider",
+      "rotating-arm",
+      "vertical-piston"
+    ],
+    "currentlyImplementedPerObjectCollisionC": "NOT YET per user's message (fail/bounce/push)",
+    "movingSchemaProvidedToThisTrack": false,
+    "actualNewMovingHazardsInP30Stages": 0,
+    "reason": "Do not invent native moving fixture identifiers, motion parameters or collision modes based solely on names"
+  },
+  "originalFrozenMain": "915fb440d5db5eaac0ead0f607d9bab8e591c4c8",
+  "privateArchiveName": "STAGE_FORGE_P30_MOVING_READY_BAYS.zip",
+  "privateArchiveSHA256": "957b102a3492091c464d406955ffaf5469aaae8dba8721f9144a9825ed83230e",
+  "privateP29OriginalArchiveSHA256": "71b09ce040d5a97e439b6a7f4326b53be593e1ea4e7242e0ad32c5ede09ed8fd",
+  "courses": [
+    {
+      "name": "nexus-p30-clear",
+      "sha256": "f06ba96a198def213af5c91ff3039c4530d5096b7804c4653d0bdcd437436e1a",
+      "totalSurfaces": 32,
+      "fixtures": 139,
+      "realMoveableHazards": 0,
+      "p30DecorativeGirders": 6,
+      "p30DecorativeLaneSignals": 6,
+      "threeZoneProps": "3 noncolliding markers",
+      "originalRoadAndArchitecture": "JSON identical to P29"
+    },
+    {
+      "name": "nexus-p30-static",
+      "sha256": "91012d51d55b70ad9653427e263686bf5e9a6d6b7a8c05f908575fb3dabf9a32",
+      "totalSurfaces": 32,
+      "fixtures": 139,
+      "realMoveableHazards": 0,
+      "p30DecorativeGirders": 6,
+      "p30DecorativeLaneSignals": 6,
+      "threeZoneProps": "3 genuine stationary legacy danger colliders",
+      "originalRoadAndArchitecture": "JSON identical to P29"
+    },
+    {
+      "name": "nexus-p29-beginner",
+      "sha256": "57c6f4779b1d6bfbb15fa1e84d72a17bd14f5a4b438bdb361077e5c136de62be",
+      "source": "bit-identical prior P29 reference"
+    },
+    {
+      "name": "nexus-p28-challenge",
+      "sha256": "2a49aa06a74e13f319619f923522960f4f4d1f53e0b23f8569bf4076e6882fb4",
+      "source": "bit-identical prior P28 reference"
+    }
+  ],
+  "motionIntentZones": [
+    {
+      "id": "SLIDER_GALLERY",
+      "u": 0.6,
+      "concept": "horizontal slider",
+      "actualB38MovingObject": false
+    },
+    {
+      "id": "ROTATOR_ATRIUM",
+      "u": 0.755,
+      "concept": "rotating arm",
+      "actualB38MovingObject": false
+    },
+    {
+      "id": "PISTON_VAULT",
+      "u": 0.9,
+      "concept": "vertical piston",
+      "actualB38MovingObject": false
+    }
+  ],
+  "legacyPhysics": {
+    "from": "unaltered P29 original B3.8 modules",
+    "operator": "deterministic machine left/right every 100ms, original native Runner.assist ON",
+    "speedsMps": [
+      28,
+      64,
+      96
+    ],
+    "scenarioRuns": 12,
+    "finished": 9,
+    "failed": 3,
+    "staticDangerCollision": "observed 64mps center-line input, actual fatal danger block",
+    "offCourseFail": "observed at 96mps oversteering",
+    "humanDriving": "NOT RUN",
+    "newMovingHazardsPhysics": "NOT RUN",
+    "perObjectResponseMode": "NOT RUN"
+  },
+  "verification": {
+    "freshExtractArchive": "PASS",
+    "payloadSHA256": "30/30 PASS",
+    "independentExactJSONRegeneration": "4/4 PASS",
+    "legacyOriginalPhysicsLogReproduction": "12/12 PASS including failures",
+    "legacyB38BaseTests": "7/7 PASS",
+    "localIndependentViewerHttpResources": "5/5 HTTP 200",
+    "actualBranchMovingB38StageCompatibility": "UNVERIFIED",
+    "officialB38EditorCamera": "NOT RUN",
+    "gameV7Deployment": "NONE"
+  },
+  "publication": "Public PR ONLY index + explanatory doc. All actual stage JSONs, original original B3.8 source, generator, viewer, physics logs, preview and original parent ZIP remain in private offline ZIP."
+}
