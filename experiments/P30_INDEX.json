@@ -1,0 +1,80 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P30-INTERNAL-CROSSINGS-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "baseMain": "915fb440d5db5eaac0ead0f607d9bab8e591c4c8",
+  "protectedP29OriginalArchiveSHA256": "f3682bc5e65cd736c6c12c567e06b21e574080fbb2442c66cfeba124969255ad",
+  "offlinePackage": "STAGE_FORGE_P30_INTERNAL_CROSSINGS_FOUR_NEW_FAMILIES.zip",
+  "offlinePackageSHA256": "710bf736a207d1fddedf12ef5dba6e6a2c84c78ed72187fb05c14858edbe874f",
+  "offlinePackageBytes": 44101804,
+  "publicContent": "Exactly this metadata index and an explanatory document. No generated stage JSON, source generator, original private game/editor source, P29 archive, preview images or QA scripts are placed on the public branch.",
+  "parts": [
+    {
+      "id": "CX-001",
+      "slug": "exchange",
+      "name": "CROSSWIND CONFLUENCE",
+      "artifactSHA256": "1d9ebf10241c6becfc464a779ff7f97c6306983bb32b861e7eba1d914a2022b7",
+      "surfaces": 32,
+      "fixtures": 115,
+      "fixedHazards": 7,
+      "realCenterRoadElevationSpanMeters": 173.84,
+      "nonlocalPlanarCrossovers": 1,
+      "roadCrossSectionVerticalClearanceAtCrossoverM": 120.652,
+      "independentReconstructedRoadMonumentTriangleMinM": 19.28096
+    },
+    {
+      "id": "LC-001",
+      "slug": "lantern",
+      "name": "LANTERN CATHEDRAL",
+      "artifactSHA256": "b4b35cda1af12f7ea58504ab2b385de0f05e9dd80457fd2abb182341fd4ba563",
+      "surfaces": 32,
+      "fixtures": 115,
+      "fixedHazards": 7,
+      "realCenterRoadElevationSpanMeters": 237.97,
+      "nonlocalPlanarCrossovers": 1,
+      "roadCrossSectionVerticalClearanceAtCrossoverM": 70.46,
+      "independentReconstructedRoadMonumentTriangleMinM": 12.61149
+    },
+    {
+      "id": "GF-001",
+      "slug": "forge",
+      "name": "GATEFOLD FOUNDRY",
+      "artifactSHA256": "45050d79661444e8818bb1a01dd7374a70cd8d255ea9a10506ccf83a4485e553",
+      "surfaces": 32,
+      "fixtures": 115,
+      "fixedHazards": 7,
+      "realCenterRoadElevationSpanMeters": 192,
+      "nonlocalPlanarCrossovers": 0,
+      "roadCrossSectionVerticalClearanceAtCrossoverM": null,
+      "independentReconstructedRoadMonumentTriangleMinM": 30.486404
+    },
+    {
+      "id": "SC-001",
+      "slug": "prismcore",
+      "name": "SPLIT CORE",
+      "artifactSHA256": "c60dd4406cb185ff5fc669c57d08af851393df19ed6724e1c5bf2ba8403db109",
+      "surfaces": 32,
+      "fixtures": 115,
+      "fixedHazards": 7,
+      "realCenterRoadElevationSpanMeters": 204.05,
+      "nonlocalPlanarCrossovers": 1,
+      "roadCrossSectionVerticalClearanceAtCrossoverM": 116.273,
+      "independentReconstructedRoadMonumentTriangleMinM": 20.427403
+    }
+  ],
+  "independentQA": {
+    "nativeFormatLikeAndStaticGeometry": "4/4 PASS",
+    "intentionalPlanarOverUnderSeparationChecks": "3/3 PASS",
+    "independentReconstructedTriangleMeshStep2And3": "4/4 PASS, not native mesh",
+    "fullyProtectedOriginalP29StageByteEquality": "4/4 VERIFIED",
+    "separateUnzipSHA256ManifestPayload": "42/42 PASS",
+    "separateUnzipByteExactJSONRegeneration": "4/4 PASS",
+    "QARepeatFreshExtract": "PASS",
+    "nativeB38Import": "NOT_RUN",
+    "nativeDrivingCollision": "NOT_RUN",
+    "humanPlay": "NOT_RUN",
+    "realCameraAndV7": "NOT_RUN",
+    "generatedRouteTrueAuthority": "UNVERIFIED"
+  },
+  "warnings": "All geometric checks use authored and independently reconstructed meshes; no actual B3.8 engine physics, native collision, ball, high-speed driving or manual play has been performed. GATEFOLD has no actual nonlocal centerline crossover, by design. Vertical separation at 3 real crossings checks cross-sections at crossing sites only, not a global road self-intersection proof."
+}
