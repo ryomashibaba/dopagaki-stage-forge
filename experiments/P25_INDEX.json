@@ -1,0 +1,68 @@
+{
+  "schema": "dopagaki.stage-forge.experimental-index/1",
+  "batch": "P25-MESH-CLEARANCE-2026-10-15",
+  "status": "EXPERIMENTAL_NOT_APPROVED",
+  "parent": "P23-LANDING-HANDOFF",
+  "baseMainSha": "915fb440d5db5eaac0ead0f607d9bab8e591c4c8",
+  "priorP24PublicDraftPr": "https://github.com/ryomashibaba/dopagaki-stage-forge/pull/25",
+  "offlineArchiveName": "STAGE_FORGE_P25_MESH_CLEARANCE_SEVEN_TRACKS.zip",
+  "offlineArchiveSHA256": "b3c54c52409d6ee59b05bbbc4b1566b060792457e59f411373cd791131b4d3db",
+  "selectedOriginalP24Variant": "C",
+  "selectedORBITSha256": "0ceacd2b4857c5b0086fa689d4735201e984fc66f02ca7a2b77d9b74172cc3cf",
+  "selectedOffsetsXYZMeters": {
+    "orbital-stator-8": [
+      -15,
+      0,
+      15
+    ],
+    "orbital-stator-9": [
+      25,
+      0,
+      5
+    ],
+    "orbital-stator-10": [
+      0,
+      0,
+      -30
+    ]
+  },
+  "realChanges": {
+    "stageJSONsChangedFromP23": 1,
+    "remainingSixTracksByteExact": true,
+    "movedArchitectureNonCollidablePanels": 3,
+    "changedDriveableRoad": false,
+    "changedObjectsFixturesRouteOrSpawn": false
+  },
+  "reconstructedTriangleMeshDistanceMetersAtCellSubdivision4": {
+    "P23-original": 0,
+    "P24-option-A": 11.180335,
+    "P24-option-B": 11.092108,
+    "P24-option-C": 15.551491,
+    "P25-selected-C": 15.551491
+  },
+  "selectedNearestMetersAtCellSubdivisionCount": {
+    "3": 15.551739,
+    "4": 15.551491,
+    "6": 15.551383
+  },
+  "method": "Reconstructed Catmull-Rom meshes, triangle intersection/nearest Euclidean distances on these independently tessellated surfaces. NOT original B3.8 engine renderer/collision mesh.",
+  "staticEvidence": {
+    "separateTriangleAlgoSyntheticTests": "5/5 PASS",
+    "originalStageSourceSha256": "P23 FULL ZIP VERIFIED",
+    "cleanZipPayloadSHA256": "37/37 PASS",
+    "byteExactJSONRegeneration": "7/7 PASS",
+    "offlineStaticGeometry": "7/7 PASS",
+    "nexusPreflight": "4/4 PASS REFERENCES",
+    "ordinaryRoadContinuity": "4 PASS / 3 EXPECTED FAIL true gaps",
+    "unintendedGapCount": 0
+  },
+  "nativeStatus": {
+    "nativeB38Parser": "NOT_RUN",
+    "ballCollision": "NOT_RUN",
+    "actualFlightAndLanding": "NOT_RUN",
+    "cameraAndManualDriving": "NOT_RUN",
+    "liveGameIntegration": "NOT_RUN",
+    "generatedRouteBehavior": "UNVERIFIED"
+  },
+  "publicBoundary": "ONLY documentation + metadata published; full stage JSONs, generator, QA source, P23 protected archive, P24 candidate JSONs, previews and any original/private game/editor source remain offline."
+}
